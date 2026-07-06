@@ -1,8 +1,0 @@
-
-function setLang(l){
- document.body.className=l;
- ['ru','en','tr'].forEach(x=>{const b=document.getElementById('b-'+x); if(b)b.classList.toggle('on',x===l)});
- document.documentElement.lang=l;
- try{localStorage.setItem('rs_lang',l)}catch(e){}
-}
-setLang(localStorage.getItem('rs_lang')||'ru');
