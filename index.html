@@ -4,162 +4,179 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>realShuma — Global Payment Solutions</title>
-  <meta name="description" content="realShuma — международные платежные решения: PayPal, Wise, Payoneer, криптовалюта, инвойсы и оплата зарубежных сервисов. Работаем с 2022 года." />
-  <meta name="keywords" content="PayPal посредник, вывод PayPal, оплатить PayPal, международные платежи, Wise, Payoneer, crypto, realShuma" />
+  <meta name="description" content="realShuma — международные платежные решения: PayPal, Wise, Payoneer, криптовалюта, инвойсы, вывод средств и оплата зарубежных сервисов. Работаем с 2022 года, 600+ отзывов." />
+  <meta name="keywords" content="PayPal посредник, вывод PayPal, PayPal Россия, PayPal СНГ, оплатить PayPal, Wise, Payoneer, realShuma, международные платежи, вывод денег" />
   <meta property="og:title" content="realShuma — Global Payment Solutions" />
-  <meta property="og:description" content="Надежные международные платежи для фрилансеров, бизнеса и частных лиц." />
+  <meta property="og:description" content="PayPal, Wise, Payoneer, crypto, invoices and international digital payments. Since 2022." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://realshuma.com" />
   <meta name="theme-color" content="#061126" />
 
   <style>
     :root{
-      --bg:#061126;--bg2:#081a3a;--bg3:#0a2454;--card:#ffffff;--dark:#07142f;
-      --text:#f6f9ff;--muted:#b9c7e6;--soft:#f4f7fb;--softText:#11203f;
-      --line:rgba(255,255,255,.14);--glass:rgba(255,255,255,.08);--glass2:rgba(255,255,255,.12);
-      --blue:#2f80ff;--blue2:#63a8ff;--cyan:#24d3ff;--green:#26d07c;--yellow:#ffcc4d;
-      --shadow:0 24px 80px rgba(0,0,0,.35);--radius:26px;--max:1180px;
+      --navy:#061126;
+      --navy2:#071a3a;
+      --navy3:#0b2d69;
+      --blue:#2f80ff;
+      --blue2:#6ab0ff;
+      --cyan:#24d3ff;
+      --green:#25d366;
+      --text:#f7fbff;
+      --muted:#aebfe3;
+      --paper:#f4f7fb;
+      --ink:#101a33;
+      --line:rgba(255,255,255,.13);
+      --glass:rgba(255,255,255,.075);
+      --card:#fff;
+      --shadow:0 26px 90px rgba(0,0,0,.33);
+      --max:1180px;
     }
     *{box-sizing:border-box}
     html{scroll-behavior:smooth}
-    body{margin:0;font-family:Inter,Arial,sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden}
-    a{color:inherit;text-decoration:none}
-    .wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
-    .nav{position:sticky;top:0;z-index:50;background:rgba(6,17,38,.86);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
-    .nav-in{height:92px;display:flex;align-items:center;justify-content:space-between;gap:18px}
-    .brand{display:flex;align-items:center;gap:14px;min-width:220px}
-    .logo{width:58px;height:58px;border-radius:18px;background:linear-gradient(135deg,#133b92,#2f80ff);display:grid;place-items:center;box-shadow:inset 0 0 18px rgba(255,255,255,.2),0 12px 34px rgba(47,128,255,.28);font-weight:900;font-size:22px;letter-spacing:-1px}
-    .brand b{display:block;font-size:28px;line-height:1}.brand b span{color:var(--blue2)}.brand small{display:block;color:var(--muted);font-size:14px;margin-top:3px}
-    .links{display:flex;align-items:center;gap:26px;font-weight:700;color:#e9f1ff}.links a{opacity:.9}.links a:hover{color:var(--blue2)}
-    .lang{display:flex;gap:8px;align-items:center}.lang button{border:1px solid var(--line);background:var(--glass);color:var(--text);border-radius:18px;padding:10px 12px;font-weight:900;cursor:pointer}.lang button.active{background:#fff;color:#08142d}
-    .menu{display:none;border:1px solid var(--line);background:var(--glass);color:white;border-radius:16px;padding:12px 14px;font-size:20px}
-    .hero{position:relative;isolation:isolate;overflow:hidden;background:
-      radial-gradient(circle at 72% 22%,rgba(47,128,255,.45),transparent 36%),
-      linear-gradient(135deg,#061126 0%,#071a3e 48%,#092b65 100%);border-bottom:1px solid rgba(255,255,255,.09)}
-    .hero:before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);background-size:58px 58px;opacity:.42;z-index:-2}
-    .hero:after{content:"";position:absolute;width:700px;height:700px;right:-170px;top:20px;background:radial-gradient(circle,rgba(55,143,255,.28),transparent 65%);filter:blur(4px);z-index:-1}
-    .hero-in{min-height:760px;padding:94px 0 70px;display:grid;grid-template-columns:1fr .92fr;gap:50px;align-items:center}
-    .badge{display:inline-flex;gap:10px;align-items:center;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.07);border-radius:999px;padding:16px 22px;color:#dfeaff;font-weight:900;letter-spacing:.06em;text-transform:uppercase}
-    h1{font-size:74px;line-height:.98;margin:32px 0 22px;letter-spacing:-.055em}.grad{display:block;color:var(--blue2)}
-    .lead{font-size:24px;line-height:1.55;color:#d8e4ff;margin:0 0 34px;max-width:680px}
-    .actions{display:flex;gap:18px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;border-radius:20px;padding:18px 28px;font-weight:900;font-size:17px;border:1px solid rgba(255,255,255,.16);box-shadow:0 16px 40px rgba(0,0,0,.18)}
-    .btn.primary{background:linear-gradient(135deg,#2f80ff,#1663ea);color:white}.btn.ghost{background:rgba(255,255,255,.07);color:white}
-    .hero-points{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:42px}.point{border:1px solid var(--line);background:rgba(255,255,255,.06);border-radius:22px;padding:18px}.point i{font-style:normal;font-size:26px}.point b{display:block;margin-top:8px}.point span{display:block;color:var(--muted);font-size:13px;margin-top:4px}
-    .visual{position:relative;min-height:560px}.globe{height:430px;border-radius:50%;background:radial-gradient(circle at 35% 35%,rgba(99,168,255,.9),rgba(47,128,255,.3) 42%,rgba(47,128,255,.08) 68%,transparent 70%);border:1px solid rgba(255,255,255,.16);box-shadow:inset 0 0 70px rgba(255,255,255,.08),0 30px 80px rgba(0,0,0,.2);position:relative;animation:float 5s ease-in-out infinite}
-    .globe:before{content:"";position:absolute;inset:28px;border-radius:50%;background-image:linear-gradient(rgba(255,255,255,.12) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.12) 1px,transparent 1px);background-size:36px 36px;clip-path:circle(50%)}
-    .orbit{position:absolute;inset:68px;border-radius:50%;border:5px solid transparent;border-bottom-color:var(--cyan);border-left-color:var(--cyan);opacity:.75;animation:spin 9s linear infinite}.orbit:before,.orbit:after{content:"➜";position:absolute;color:var(--blue2);font-size:40px}.orbit:before{right:20px;top:48px}.orbit:after{left:32px;bottom:45px;transform:rotate(180deg)}
-    .dash{position:absolute;left:22px;right:22px;bottom:0;background:rgba(2,9,25,.82);border:1px solid rgba(255,255,255,.14);border-radius:28px;padding:28px;box-shadow:var(--shadow)}
-    .dash small{color:#a9bbdf;font-weight:800}.money{font-size:48px;font-weight:950;margin:10px 0}.dash p{color:#c6d5f2;font-size:20px;margin:0}
+    body{margin:0;font-family:Inter,Arial,sans-serif;background:var(--navy);color:var(--text);overflow-x:hidden}
+    a{text-decoration:none;color:inherit}
+    .wrap{max-width:var(--max);margin:auto;padding:0 24px}
+    .topbar{position:sticky;top:0;z-index:100;background:rgba(6,17,38,.88);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+    .nav{height:88px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+    .brand{display:flex;align-items:center;gap:14px}
+    .rs{width:58px;height:58px;border-radius:18px;background:linear-gradient(135deg,#0d3a92,#2f80ff);display:grid;place-items:center;font-size:22px;font-weight:950;letter-spacing:-1px;box-shadow:inset 0 0 22px rgba(255,255,255,.22),0 20px 60px rgba(47,128,255,.25)}
+    .brand-title{font-size:28px;font-weight:950;line-height:1;letter-spacing:-.04em}.brand-title span{color:var(--blue2)}.brand-sub{color:var(--muted);font-size:14px;margin-top:4px}
+    .navlinks{display:flex;gap:25px;align-items:center;font-weight:800;color:#edf4ff}.navlinks a:hover{color:var(--blue2)}
+    .langs{display:flex;gap:8px;align-items:center}.langs button,.burger{border:1px solid var(--line);background:var(--glass);color:var(--text);font-weight:950;border-radius:18px;padding:10px 12px;cursor:pointer}.langs button.active{background:white;color:#08142d}.burger{display:none;font-size:20px}
+    .mobile{display:none;position:absolute;top:88px;left:0;right:0;background:#071225;border-bottom:1px solid var(--line);padding:18px 24px}.mobile.open{display:grid;gap:16px}
+    .hero{position:relative;isolation:isolate;overflow:hidden;background:radial-gradient(circle at 75% 18%,rgba(47,128,255,.42),transparent 34%),linear-gradient(135deg,#050f24,#071a3a 52%,#092d69)}
+    .hero:before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);background-size:54px 54px;opacity:.45;z-index:-2}
+    .hero:after{content:"";position:absolute;right:-190px;top:40px;width:740px;height:740px;background:radial-gradient(circle,rgba(75,155,255,.25),transparent 64%);filter:blur(5px);z-index:-1}
+    .hero-grid{min-height:760px;display:grid;grid-template-columns:1.03fr .97fr;gap:48px;align-items:center;padding:90px 0 70px}
+    .badge{display:inline-flex;align-items:center;gap:10px;padding:15px 22px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.07);border-radius:999px;color:#e0ebff;font-weight:950;letter-spacing:.06em;text-transform:uppercase}
+    h1{font-size:76px;line-height:.97;margin:30px 0 24px;letter-spacing:-.06em}.blue{color:var(--blue2);display:block}
+    .lead{font-size:24px;line-height:1.56;color:#d8e4ff;margin:0 0 34px;max-width:690px}
+    .actions{display:flex;gap:16px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;border-radius:20px;padding:18px 28px;font-weight:950;font-size:17px;border:1px solid rgba(255,255,255,.16);box-shadow:0 16px 42px rgba(0,0,0,.18)}
+    .btn.primary{background:linear-gradient(135deg,#2f80ff,#1467ff);color:white}.btn.ghost{background:rgba(255,255,255,.07);color:white}.btn.dark{background:#061126;color:white}
+    .mini{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:42px}.mini-card{border:1px solid var(--line);background:rgba(255,255,255,.06);border-radius:22px;padding:18px}.mini-card i{font-style:normal;font-size:27px}.mini-card b{display:block;margin-top:8px}.mini-card span{display:block;color:var(--muted);font-size:13px;margin-top:4px}
+    .visual{position:relative;min-height:590px}.globe{height:455px;border-radius:50%;background:radial-gradient(circle at 34% 30%,rgba(106,176,255,.95),rgba(47,128,255,.28) 42%,rgba(47,128,255,.08) 67%,transparent 70%);border:1px solid rgba(255,255,255,.16);box-shadow:inset 0 0 80px rgba(255,255,255,.08),0 30px 90px rgba(0,0,0,.25);animation:float 5.5s ease-in-out infinite;position:relative}
+    .globe:before{content:"";position:absolute;inset:30px;border-radius:50%;background-image:linear-gradient(rgba(255,255,255,.13) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.13) 1px,transparent 1px);background-size:36px 36px;clip-path:circle(50%)}
+    .orbit{position:absolute;inset:74px;border-radius:50%;border:5px solid transparent;border-bottom-color:var(--cyan);border-left-color:var(--cyan);opacity:.8;animation:spin 10s linear infinite}.orbit:before,.orbit:after{content:"➜";position:absolute;color:var(--blue2);font-size:42px}.orbit:before{right:20px;top:48px}.orbit:after{left:32px;bottom:45px;transform:rotate(180deg)}
+    .dash{position:absolute;left:18px;right:18px;bottom:0;background:rgba(2,9,25,.86);border:1px solid rgba(255,255,255,.14);border-radius:30px;padding:28px;box-shadow:var(--shadow)}.dash small{color:#a9bbdf;font-weight:900}.money{font-size:50px;font-weight:950;margin:10px 0}.dash p{color:#c6d5f2;font-size:20px;margin:0}
     @keyframes spin{to{transform:rotate(360deg)}}@keyframes float{50%{transform:translateY(-14px)}}
-    .platforms{background:#071225;border-top:1px solid rgba(255,255,255,.08);border-bottom:1px solid rgba(255,255,255,.08)}
-    .platform-grid{display:grid;grid-template-columns:repeat(8,1fr);gap:12px;padding:22px 0}.platform{border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.045);border-radius:18px;padding:16px;text-align:center;font-weight:900;color:#dbe8ff}.platform span{color:var(--blue2)}
-    .section{padding:86px 0;background:var(--soft);color:var(--softText)}.section.dark{background:linear-gradient(180deg,#071225,#061126);color:white}.head{text-align:center;max-width:760px;margin:0 auto 42px}.head h2{font-size:46px;margin:0 0 12px;letter-spacing:-.04em}.head p{font-size:18px;color:#5d6d8f;margin:0}.dark .head p{color:var(--muted)}
-    .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.card{background:#fff;border:1px solid #e6ebf4;border-radius:22px;padding:26px;box-shadow:0 18px 50px rgba(10,25,60,.08)}.card .ico{font-size:34px}.card h3{margin:18px 0 10px;font-size:20px}.card p{margin:0;color:#5b6882;line-height:1.5}
-    .dark-card{background:rgba(255,255,255,.075);border:1px solid rgba(255,255,255,.12);border-radius:24px;padding:28px;color:white}.dark-card p{color:var(--muted);line-height:1.6}
-    .stats{background:linear-gradient(90deg,#061126,#0b2d69,#061126);padding:34px 0}.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.stat{display:flex;gap:14px;align-items:center;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:22px}.stat i{font-style:normal;font-size:28px}.stat b{font-size:28px;color:var(--blue2)}.stat span{display:block;color:var(--muted);font-size:13px}
-    .process{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.step{position:relative}.step strong{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--blue);margin-bottom:18px;font-weight:950}
-    .reviews-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:28px}.reviews-head h2{font-size:42px;margin:0}.reviews-head p{margin:8px 0 0;color:var(--muted)}
-    .reviews{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.review{background:white;color:var(--softText);border-radius:22px;padding:22px;border:1px solid #e6ebf4;box-shadow:0 18px 48px rgba(8,20,47,.09);display:flex;flex-direction:column;min-height:265px}.r-top{display:flex;gap:12px;align-items:center}.avatar{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,#2f80ff,#0b2d69);color:white;font-weight:950}.r-name{font-weight:950}.r-sub{font-size:13px;color:#7180a0}.stars{color:#f5b400;margin:14px 0}.review p{color:#394760;line-height:1.55;margin:0 0 18px}.review a{margin-top:auto;color:#1e6cf0;font-weight:900}
-    .about-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:24px}.about-card{background:rgba(255,255,255,.075);border:1px solid rgba(255,255,255,.12);border-radius:28px;padding:30px}.quote{font-size:20px;line-height:1.65;color:#dbe7ff}.check{display:grid;gap:12px;margin-top:20px}.check div:before{content:"✓";color:var(--green);font-weight:950;margin-right:10px}
+    .strip{background:#071225;border-top:1px solid rgba(255,255,255,.08);border-bottom:1px solid rgba(255,255,255,.08)}.logos{display:grid;grid-template-columns:repeat(8,1fr);gap:12px;padding:22px 0}.logo-pill{border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.045);border-radius:18px;padding:16px;text-align:center;font-weight:950;color:#dbe8ff}.logo-pill span{color:var(--blue2)}
+    .section{padding:88px 0;background:var(--paper);color:var(--ink)}.section.dark{background:linear-gradient(180deg,#071225,#061126);color:white}.head{text-align:center;max-width:760px;margin:0 auto 44px}.head h2{font-size:46px;margin:0 0 12px;letter-spacing:-.045em}.head p{font-size:18px;color:#5d6d8f;margin:0}.dark .head p{color:var(--muted)}
+    .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.card{background:#fff;border:1px solid #e6ebf4;border-radius:24px;padding:26px;box-shadow:0 18px 50px rgba(10,25,60,.08);transition:.25s}.card:hover{transform:translateY(-4px);box-shadow:0 26px 60px rgba(10,25,60,.13)}.card .ico{font-size:35px}.card h3{margin:18px 0 10px;font-size:20px}.card p{margin:0;color:#5b6882;line-height:1.55}
+    .stats{background:linear-gradient(90deg,#061126,#0b2d69,#061126);padding:34px 0}.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.stat{display:flex;gap:14px;align-items:center;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:22px}.stat i{font-style:normal;font-size:28px}.stat b{font-size:30px;color:var(--blue2)}.stat span{display:block;color:var(--muted);font-size:13px}
+    .process{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.dark-card{background:rgba(255,255,255,.075);border:1px solid rgba(255,255,255,.12);border-radius:26px;padding:28px}.dark-card p{color:var(--muted);line-height:1.65}.step strong{display:grid;place-items:center;width:46px;height:46px;border-radius:50%;background:var(--blue);margin-bottom:18px;font-weight:950}
+    .reviews-head{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;margin-bottom:30px}.reviews-head h2{font-size:44px;margin:0;letter-spacing:-.045em}.reviews-head p{margin:8px 0 0;color:#5d6d8f}.reviews{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.review{background:white;color:var(--ink);border-radius:24px;padding:22px;border:1px solid #e6ebf4;box-shadow:0 18px 48px rgba(8,20,47,.09);display:flex;flex-direction:column;min-height:285px}.r-top{display:flex;gap:12px;align-items:center}.avatar{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,#2f80ff,#0b2d69);color:white;font-weight:950}.r-name{font-weight:950}.r-sub{font-size:13px;color:#7180a0}.stars{color:#f5b400;margin:14px 0}.review p{color:#394760;line-height:1.56;margin:0 0 18px}.review a{margin-top:auto;color:#1e6cf0;font-weight:950}
+    .about-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:24px}.about-card{background:rgba(255,255,255,.075);border:1px solid rgba(255,255,255,.12);border-radius:28px;padding:30px}.quote{font-size:20px;line-height:1.65;color:#dbe7ff}.check{display:grid;gap:12px;margin-top:20px}.check div:before{content:"✓";color:#26d07c;font-weight:950;margin-right:10px}
     .faq{display:grid;gap:14px;max-width:920px;margin:0 auto}.faq details{background:white;border:1px solid #e6ebf4;border-radius:18px;padding:20px}.faq summary{cursor:pointer;font-weight:950;font-size:18px}.faq p{color:#5c6983;line-height:1.6}
-    .contact-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px}.contact-card{background:rgba(255,255,255,.075);border:1px solid rgba(255,255,255,.12);border-radius:24px;padding:28px}.contact-card h3{margin-top:0}.contact-card a{display:block;color:#dbe7ff;margin:12px 0}.contact-btn{margin-top:18px;width:100%}
-    footer{background:#041024;border-top:1px solid rgba(255,255,255,.1);padding:28px 0;color:#90a2c7}
-    .float{position:fixed;right:16px;bottom:18px;z-index:60;display:grid;gap:12px}.float a{width:64px;height:64px;border-radius:22px;display:grid;place-items:center;font-size:26px;box-shadow:0 18px 44px rgba(0,0,0,.32)}.float .tg{background:#2aa5e8}.float .wa{background:#25d366}
-    .mobile-panel{display:none}
-    [data-lang]{display:none} body.lang-ru [data-lang="ru"], body.lang-en [data-lang="en"], body.lang-tr [data-lang="tr"]{display:initial}
-    body.lang-ru .block[data-lang="ru"], body.lang-en .block[data-lang="en"], body.lang-tr .block[data-lang="tr"]{display:block}
-    body.lang-ru .gridlang[data-lang="ru"], body.lang-en .gridlang[data-lang="en"], body.lang-tr .gridlang[data-lang="tr"]{display:grid}
-    @media(max-width:980px){.links{display:none}.menu{display:block}.nav-in{height:86px}.hero-in{grid-template-columns:1fr;min-height:auto;padding:70px 0}.visual{min-height:520px}.platform-grid{grid-template-columns:repeat(2,1fr)}.cards,.reviews{grid-template-columns:repeat(2,1fr)}.stats-grid,.process,.contact-grid,.about-grid{grid-template-columns:1fr}.mobile-panel{display:none;position:absolute;top:86px;left:0;right:0;background:#071225;border-bottom:1px solid var(--line);padding:18px 24px}.mobile-panel.open{display:grid;gap:16px}}
-    @media(max-width:620px){.wrap{padding:0 18px}.brand{min-width:auto}.brand b{font-size:24px}.brand small{font-size:13px}.logo{width:52px;height:52px}.lang button{padding:10px 9px}h1{font-size:52px}.lead{font-size:20px}.actions{display:grid}.btn{width:100%}.hero-points{grid-template-columns:1fr}.globe{height:360px}.dash{left:0;right:0}.cards,.reviews{grid-template-columns:1fr}.head h2,.reviews-head h2{font-size:36px}.reviews-head{display:block}.float a{width:58px;height:58px}.platform-grid{grid-template-columns:1fr}.section{padding:66px 0}}
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px}.contact-card{background:rgba(255,255,255,.075);border:1px solid rgba(255,255,255,.12);border-radius:24px;padding:28px}.contact-card h3{margin-top:0}.contact-card a{display:block;color:#dbe7ff;margin:12px 0}
+    footer{background:#041024;border-top:1px solid rgba(255,255,255,.1);padding:28px 0;color:#90a2c7}.float{position:fixed;right:16px;bottom:18px;z-index:60;display:grid;gap:12px}.float a{width:64px;height:64px;border-radius:22px;display:grid;place-items:center;font-size:26px;box-shadow:0 18px 44px rgba(0,0,0,.32)}.float .tg{background:#2aa5e8}.float .wa{background:#25d366}
+    [data-lang]{display:none} body.lang-ru [data-lang="ru"], body.lang-en [data-lang="en"], body.lang-tr [data-lang="tr"]{display:initial} body.lang-ru .block[data-lang="ru"],body.lang-en .block[data-lang="en"],body.lang-tr .block[data-lang="tr"]{display:block} body.lang-ru .gridlang[data-lang="ru"],body.lang-en .gridlang[data-lang="en"],body.lang-tr .gridlang[data-lang="tr"]{display:grid}
+    @media(max-width:980px){.navlinks{display:none}.burger{display:block}.hero-grid{grid-template-columns:1fr;min-height:auto;padding:70px 0}.visual{min-height:520px}.logos{grid-template-columns:repeat(2,1fr)}.cards,.reviews{grid-template-columns:repeat(2,1fr)}.stats-grid,.process,.contact-grid,.about-grid{grid-template-columns:1fr}}
+    @media(max-width:620px){.wrap{padding:0 18px}.nav{height:86px}.brand-title{font-size:24px}.brand-sub{font-size:13px}.rs{width:52px;height:52px}.langs button{padding:10px 9px}h1{font-size:52px}.lead{font-size:20px}.actions{display:grid}.btn{width:100%}.mini{grid-template-columns:1fr}.globe{height:360px}.dash{left:0;right:0}.cards,.reviews{grid-template-columns:1fr}.head h2,.reviews-head h2{font-size:36px}.reviews-head{display:block}.logos{grid-template-columns:1fr}.section{padding:66px 0}.float a{width:58px;height:58px}}
   </style>
 </head>
+
 <body class="lang-ru">
-  <header class="nav">
-    <div class="wrap nav-in">
+  <header class="topbar">
+    <div class="wrap nav">
       <a class="brand" href="#home">
-        <div class="logo">RS</div>
-        <div><b>real<span>Shuma</span></b><small>Global Payment Solutions</small></div>
+        <div class="rs">RS</div>
+        <div><div class="brand-title">real<span>Shuma</span></div><div class="brand-sub">Global Payment Solutions</div></div>
       </a>
-      <nav class="links">
+      <nav class="navlinks">
         <a href="#services" data-lang="ru">Услуги</a><a href="#services" data-lang="en">Services</a><a href="#services" data-lang="tr">Hizmetler</a>
-        <a href="#process" data-lang="ru">Как это работает</a><a href="#process" data-lang="en">How it works</a><a href="#process" data-lang="tr">Nasıl çalışır</a>
+        <a href="#process" data-lang="ru">Процесс</a><a href="#process" data-lang="en">Process</a><a href="#process" data-lang="tr">Süreç</a>
         <a href="#reviews" data-lang="ru">Отзывы</a><a href="#reviews" data-lang="en">Reviews</a><a href="#reviews" data-lang="tr">Yorumlar</a>
         <a href="#about" data-lang="ru">Обо мне</a><a href="#about" data-lang="en">About</a><a href="#about" data-lang="tr">Hakkımda</a>
         <a href="#contact" data-lang="ru">Контакты</a><a href="#contact" data-lang="en">Contact</a><a href="#contact" data-lang="tr">İletişim</a>
       </nav>
-      <div class="lang">
-        <button onclick="setLang('ru')" id="b-ru" class="active">🇷🇺 RU</button>
+      <div class="langs">
+        <button onclick="setLang('ru')" id="b-ru">🇷🇺 RU</button>
         <button onclick="setLang('en')" id="b-en">🇬🇧 EN</button>
         <button onclick="setLang('tr')" id="b-tr">🇹🇷 TR</button>
-        <button class="menu" onclick="document.querySelector('.mobile-panel').classList.toggle('open')">☰</button>
+        <button class="burger" onclick="document.querySelector('.mobile').classList.toggle('open')">☰</button>
       </div>
     </div>
-    <div class="mobile-panel">
-      <a href="#services">Services / Услуги</a><a href="#process">How it works / Как работает</a><a href="#reviews">Reviews / Отзывы</a><a href="#about">About / Обо мне</a><a href="#contact">Contact / Контакты</a>
+    <div class="mobile">
+      <a href="#services">Services / Услуги</a>
+      <a href="#process">Process / Процесс</a>
+      <a href="#reviews">Reviews / Отзывы</a>
+      <a href="#about">About / Обо мне</a>
+      <a href="#contact">Contact / Контакты</a>
     </div>
   </header>
 
   <main id="home">
     <section class="hero">
-      <div class="wrap hero-in">
+      <div class="wrap hero-grid">
         <div>
-          <div class="badge" data-lang="ru">Надежно • быстро • безопасно</div>
+          <div class="badge" data-lang="ru">Надёжно • быстро • безопасно</div>
           <div class="badge" data-lang="en">Reliable • fast • secure</div>
           <div class="badge" data-lang="tr">Güvenilir • hızlı • güvenli</div>
 
-          <h1 data-lang="ru">Международные платежи <span class="grad">без лишних сложностей</span></h1>
-          <h1 data-lang="en">Global payments <span class="grad">made simple</span></h1>
-          <h1 data-lang="tr">Global ödemeler <span class="grad">daha kolay</span></h1>
+          <h1 data-lang="ru">Международные платежи <span class="blue">без лишней сложности</span></h1>
+          <h1 data-lang="en">Global payments <span class="blue">made simple</span></h1>
+          <h1 data-lang="tr">Global ödemeler <span class="blue">daha kolay</span></h1>
 
-          <p class="lead" data-lang="ru">Платежные решения для фрилансеров, бизнеса и частных лиц: PayPal, Wise, Payoneer, криптовалюта, инвойсы, переводы и оплата зарубежных сервисов.</p>
-          <p class="lead" data-lang="en">Payment solutions for freelancers, businesses and individuals: PayPal, Wise, Payoneer, crypto, invoices, transfers and international digital services.</p>
-          <p class="lead" data-lang="tr">Freelancerlar, şirketler ve bireyler için ödeme çözümleri: PayPal, Wise, Payoneer, kripto, faturalar ve uluslararası dijital servisler.</p>
+          <p class="lead" data-lang="ru">Помогаю фрилансерам, компаниям и частным лицам принимать, отправлять и выводить платежи по всему миру: PayPal, Wise, Payoneer, крипта, инвойсы и зарубежные сервисы.</p>
+          <p class="lead" data-lang="en">I help freelancers, businesses and individuals receive, send and withdraw payments worldwide: PayPal, Wise, Payoneer, crypto, invoices and international services.</p>
+          <p class="lead" data-lang="tr">Freelancerlar, şirketler ve bireyler için global ödeme çözümleri: PayPal, Wise, Payoneer, kripto, faturalar ve uluslararası servisler.</p>
 
           <div class="actions">
-            <a class="btn primary" href="https://t.me/realshuma" target="_blank">✈️ <span data-lang="ru">Написать в Telegram</span><span data-lang="en">Contact on Telegram</span><span data-lang="tr">Telegram ile iletişim</span></a>
-            <a class="btn ghost" href="#services"> <span data-lang="ru">Смотреть услуги →</span><span data-lang="en">View services →</span><span data-lang="tr">Hizmetleri gör →</span></a>
+            <a class="btn primary" href="https://t.me/realshuma" target="_blank">✈️ <span data-lang="ru">Написать в Telegram</span><span data-lang="en">Contact on Telegram</span><span data-lang="tr">Telegram ile yaz</span></a>
+            <a class="btn ghost" href="#services"><span data-lang="ru">Посмотреть услуги →</span><span data-lang="en">View services →</span><span data-lang="tr">Hizmetleri gör →</span></a>
           </div>
 
-          <div class="hero-points">
-            <div class="point"><i>🛡️</i><b data-lang="ru">Безопасно</b><b data-lang="en">Secure workflow</b><b data-lang="tr">Güvenli süreç</b><span data-lang="ru">Понятные условия и аккуратная работа</span><span data-lang="en">Clear terms and reliable workflow</span><span data-lang="tr">Net şartlar ve güvenilir süreç</span></div>
-            <div class="point"><i>⚡</i><b data-lang="ru">Быстрые ответы</b><b data-lang="en">Fast replies</b><b data-lang="tr">Hızlı yanıt</b><span data-lang="ru">Telegram, WhatsApp, email</span><span data-lang="en">Telegram, WhatsApp, email</span><span data-lang="tr">Telegram, WhatsApp, email</span></div>
-            <div class="point"><i>🌍</i><b data-lang="ru">Международно</b><b data-lang="en">Worldwide</b><b data-lang="tr">Uluslararası</b><span data-lang="ru">Клиенты из разных стран</span><span data-lang="en">Clients from different countries</span><span data-lang="tr">Farklı ülkelerden müşteriler</span></div>
+          <div class="mini">
+            <div class="mini-card"><i>🛡️</i><b data-lang="ru">Безопасная работа</b><b data-lang="en">Secure workflow</b><b data-lang="tr">Güvenli süreç</b><span data-lang="ru">Понятные условия и аккуратное сопровождение</span><span data-lang="en">Clear terms and reliable communication</span><span data-lang="tr">Net şartlar ve güvenilir iletişim</span></div>
+            <div class="mini-card"><i>⚡</i><b data-lang="ru">Быстрые ответы</b><b data-lang="en">Fast replies</b><b data-lang="tr">Hızlı yanıt</b><span>Telegram · WhatsApp · Email</span></div>
+            <div class="mini-card"><i>🌍</i><b data-lang="ru">Международно</b><b data-lang="en">Worldwide</b><b data-lang="tr">Global</b><span data-lang="ru">Клиенты из разных стран и регионов</span><span data-lang="en">Clients from different countries</span><span data-lang="tr">Farklı ülkelerden müşteriler</span></div>
           </div>
         </div>
 
         <div class="visual">
           <div class="globe"><div class="orbit"></div></div>
           <div class="dash">
-            <small data-lang="ru">Платежная панель</small><small data-lang="en">Payment dashboard</small><small data-lang="tr">Ödeme paneli</small>
+            <small data-lang="ru">Payment dashboard</small><small data-lang="en">Payment dashboard</small><small data-lang="tr">Ödeme paneli</small>
             <div class="money">$1,250.45</div>
-            <p>PayPal • Wise • Crypto</p>
+            <p>PayPal • Wise • Crypto • Invoices</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="platforms">
-      <div class="wrap platform-grid">
-        <div class="platform"><span>Pay</span>Pal</div><div class="platform"><span>Wise</span></div><div class="platform">Payoneer</div><div class="platform">Bank Transfer</div><div class="platform">Crypto</div><div class="platform">Invoices</div><div class="platform">AI Services</div><div class="platform">Freelance</div>
+    <section class="strip">
+      <div class="wrap logos">
+        <div class="logo-pill"><span>Pay</span>Pal</div>
+        <div class="logo-pill"><span>Wise</span></div>
+        <div class="logo-pill">Payoneer</div>
+        <div class="logo-pill">Bank Transfer</div>
+        <div class="logo-pill">Crypto</div>
+        <div class="logo-pill">Invoices</div>
+        <div class="logo-pill">ChatGPT / AI</div>
+        <div class="logo-pill">VGen / Cults</div>
       </div>
     </section>
 
     <section class="section" id="services">
       <div class="wrap">
         <div class="head">
-          <h2 data-lang="ru">Что я могу сделать для вас</h2><h2 data-lang="en">What I can do for you</h2><h2 data-lang="tr">Sizin için neler yapabilirim</h2>
-          <p data-lang="ru">Индивидуальные платежные решения под вашу задачу.</p><p data-lang="en">All-in-one payment solutions for your specific task.</p><p data-lang="tr">İhtiyacınıza göre ödeme çözümleri.</p>
+          <h2 data-lang="ru">Что я могу сделать для вас</h2>
+          <h2 data-lang="en">What I can do for you</h2>
+          <h2 data-lang="tr">Sizin için neler yapabilirim</h2>
+          <p data-lang="ru">Индивидуальные платежные решения под вашу задачу. Комиссия рассчитывается отдельно, минимум от $5.</p>
+          <p data-lang="en">Custom payment solutions for your task. The fee is individual, minimum from $5.</p>
+          <p data-lang="tr">İhtiyacınıza göre ödeme çözümleri. Komisyon kişisel, minimum $5.</p>
         </div>
 
         <div class="cards">
-          <div class="card"><div class="ico">💳</div><h3 data-lang="ru">Приём платежей</h3><h3 data-lang="en">Receive payments</h3><h3 data-lang="tr">Ödeme alma</h3><p data-lang="ru">Помощь с приёмом оплат на PayPal, Wise, Payoneer и другие платформы.</p><p data-lang="en">Help receiving payments to PayPal, Wise, Payoneer and other platforms.</p><p data-lang="tr">PayPal, Wise, Payoneer ve diğer platformlardan ödeme alma desteği.</p></div>
-          <div class="card"><div class="ico">🏦</div><h3 data-lang="ru">Вывод средств</h3><h3 data-lang="en">Withdraw funds</h3><h3 data-lang="tr">Para çekme</h3><p data-lang="ru">Вывод заработка с PayPal, маркетплейсов и цифровых платформ.</p><p data-lang="en">Withdraw funds from PayPal, marketplaces and digital platforms.</p><p data-lang="tr">PayPal, pazar yerleri ve dijital platformlardan para çekme.</p></div>
-          <div class="card"><div class="ico">📄</div><h3 data-lang="ru">Инвойсы и счета</h3><h3 data-lang="en">Invoices</h3><h3 data-lang="tr">Faturalar</h3><p data-lang="ru">Приём и оплата инвойсов, товаров, подписок и зарубежных сервисов.</p><p data-lang="en">Create, receive and pay invoices, goods, subscriptions and services.</p><p data-lang="tr">Fatura, ürün, abonelik ve servis ödemeleri.</p></div>
-          <div class="card"><div class="ico">₿</div><h3 data-lang="ru">Крипта ↔ фиат</h3><h3 data-lang="en">Crypto ↔ fiat</h3><h3 data-lang="tr">Kripto ↔ fiat</h3><p data-lang="ru">Платежные решения с криптовалютой, стейблкоинами и фиатными валютами.</p><p data-lang="en">Payment solutions with crypto, stablecoins and fiat currencies.</p><p data-lang="tr">Kripto, stablecoin ve fiat para çözümleri.</p></div>
-          <div class="card"><div class="ico">🤖</div><h3 data-lang="ru">AI-сервисы</h3><h3 data-lang="en">AI services</h3><h3 data-lang="tr">AI servisleri</h3><p data-lang="ru">Оплата ChatGPT, DeepSeek, Midjourney, API, подписок и цифровых инструментов.</p><p data-lang="en">Payments for ChatGPT, DeepSeek, Midjourney, API, subscriptions and tools.</p><p data-lang="tr">ChatGPT, DeepSeek, Midjourney, API ve abonelik ödemeleri.</p></div>
-          <div class="card"><div class="ico">🎨</div><h3 data-lang="ru">Платформы фриланса</h3><h3 data-lang="en">Freelance platforms</h3><h3 data-lang="tr">Freelance platformları</h3><p data-lang="ru">VGen, Cults, Boosty, Hipolink, зарубежные площадки и творческие сервисы.</p><p data-lang="en">VGen, Cults, Boosty, Hipolink and international creator platforms.</p><p data-lang="tr">VGen, Cults, Boosty, Hipolink ve yaratıcı platformlar.</p></div>
-          <div class="card"><div class="ico">🌐</div><h3 data-lang="ru">Международные переводы</h3><h3 data-lang="en">International transfers</h3><h3 data-lang="tr">Uluslararası transferler</h3><p data-lang="ru">Переводы между странами и помощь с выбором удобного способа оплаты.</p><p data-lang="en">Cross-border transfers and choosing the most suitable payment method.</p><p data-lang="tr">Ülkeler arası transferler ve uygun ödeme yöntemi seçimi.</p></div>
-          <div class="card"><div class="ico">⚙️</div><h3 data-lang="ru">Индивидуальные задачи</h3><h3 data-lang="en">Custom tasks</h3><h3 data-lang="tr">Özel işler</h3><p data-lang="ru">Если задача нестандартная — разберём ситуацию и предложим доступное решение.</p><p data-lang="en">If the task is unusual, we review it and offer a practical solution.</p><p data-lang="tr">Özel bir durum varsa inceler ve çözüm sunarız.</p></div>
+          <div class="card"><div class="ico">💳</div><h3 data-lang="ru">Приём платежей</h3><h3 data-lang="en">Receive payments</h3><h3 data-lang="tr">Ödeme alma</h3><p data-lang="ru">Приём оплат через PayPal, Wise, Payoneer и другие международные инструменты.</p><p data-lang="en">Receive payments via PayPal, Wise, Payoneer and other international tools.</p><p data-lang="tr">PayPal, Wise, Payoneer ve diğer uluslararası araçlarla ödeme alma.</p></div>
+          <div class="card"><div class="ico">🏦</div><h3 data-lang="ru">Вывод средств</h3><h3 data-lang="en">Withdraw funds</h3><h3 data-lang="tr">Para çekme</h3><p data-lang="ru">Вывод заработка с PayPal, маркетплейсов, фриланс-площадок и цифровых сервисов.</p><p data-lang="en">Withdraw funds from PayPal, marketplaces, freelance platforms and digital services.</p><p data-lang="tr">PayPal, pazar yerleri, freelance platformları ve dijital servislerden para çekme.</p></div>
+          <div class="card"><div class="ico">📄</div><h3 data-lang="ru">Инвойсы и счета</h3><h3 data-lang="en">Invoices</h3><h3 data-lang="tr">Faturalar</h3><p data-lang="ru">Оплата и приём инвойсов, товаров, подписок, сервисов и зарубежных заказов.</p><p data-lang="en">Pay and receive invoices, goods, subscriptions, services and foreign orders.</p><p data-lang="tr">Fatura, ürün, abonelik, servis ve yurtdışı sipariş ödemeleri.</p></div>
+          <div class="card"><div class="ico">₿</div><h3 data-lang="ru">Крипта ↔ фиат</h3><h3 data-lang="en">Crypto ↔ fiat</h3><h3 data-lang="tr">Kripto ↔ fiat</h3><p data-lang="ru">Решения с криптовалютой, стейблкоинами, картами и фиатными переводами.</p><p data-lang="en">Solutions with crypto, stablecoins, cards and fiat transfers.</p><p data-lang="tr">Kripto, stablecoin, kart ve fiat transfer çözümleri.</p></div>
+          <div class="card"><div class="ico">🤖</div><h3 data-lang="ru">AI-сервисы</h3><h3 data-lang="en">AI services</h3><h3 data-lang="tr">AI servisleri</h3><p data-lang="ru">Оплата ChatGPT, DeepSeek, Midjourney, API, подписок и цифровых инструментов.</p><p data-lang="en">Payments for ChatGPT, DeepSeek, Midjourney, APIs, subscriptions and digital tools.</p><p data-lang="tr">ChatGPT, DeepSeek, Midjourney, API ve dijital abonelik ödemeleri.</p></div>
+          <div class="card"><div class="ico">🎨</div><h3 data-lang="ru">Площадки авторов</h3><h3 data-lang="en">Creator platforms</h3><h3 data-lang="tr">İçerik platformları</h3><p data-lang="ru">VGen, Cults, Boosty, Hipolink, стоки, арты, модели и творческие сервисы.</p><p data-lang="en">VGen, Cults, Boosty, Hipolink, stock platforms, art, models and creator services.</p><p data-lang="tr">VGen, Cults, Boosty, Hipolink, stok, sanat ve içerik platformları.</p></div>
+          <div class="card"><div class="ico">🌐</div><h3 data-lang="ru">Переводы за границу</h3><h3 data-lang="en">Cross-border transfers</h3><h3 data-lang="tr">Uluslararası transfer</h3><p data-lang="ru">Помощь с отправкой и получением платежей между странами и платформами.</p><p data-lang="en">Help sending and receiving payments between countries and platforms.</p><p data-lang="tr">Ülkeler ve platformlar arasında ödeme gönderme ve alma desteği.</p></div>
+          <div class="card"><div class="ico">⚙️</div><h3 data-lang="ru">Нестандартные задачи</h3><h3 data-lang="en">Custom tasks</h3><h3 data-lang="tr">Özel işler</h3><p data-lang="ru">Если задачу сложно решить обычным способом — разберём ситуацию и найдём вариант.</p><p data-lang="en">If the task is not standard, we review the situation and find a suitable option.</p><p data-lang="tr">Standart olmayan durumları inceler ve uygun çözüm buluruz.</p></div>
         </div>
       </div>
     </section>
@@ -176,13 +193,13 @@
     <section class="section dark" id="process">
       <div class="wrap">
         <div class="head">
-          <h2 data-lang="ru">Как это работает</h2><h2 data-lang="en">How it works</h2><h2 data-lang="tr">Nasıl çalışır</h2>
-          <p data-lang="ru">Простой и понятный процесс без лишней бюрократии.</p><p data-lang="en">A simple and clear process without unnecessary complexity.</p><p data-lang="tr">Gereksiz karmaşa olmadan net bir süreç.</p>
+          <h2 data-lang="ru">Как проходит работа</h2><h2 data-lang="en">How it works</h2><h2 data-lang="tr">Nasıl çalışır</h2>
+          <p data-lang="ru">Просто: задача → условия → операция → подтверждение.</p><p data-lang="en">Simple: task → terms → operation → confirmation.</p><p data-lang="tr">Basit: ihtiyaç → şartlar → işlem → onay.</p>
         </div>
         <div class="process">
-          <div class="dark-card step"><strong>1</strong><h3 data-lang="ru">Вы описываете задачу</h3><h3 data-lang="en">Describe your task</h3><h3 data-lang="tr">İşinizi açıklayın</h3><p data-lang="ru">Напишите, что нужно: принять оплату, вывести деньги, оплатить сервис или инвойс.</p><p data-lang="en">Tell me what you need: receive payment, withdraw funds, pay for a service or invoice.</p><p data-lang="tr">Ne gerektiğini yazın: ödeme alma, para çekme, servis veya fatura ödeme.</p></div>
-          <div class="dark-card step"><strong>2</strong><h3 data-lang="ru">Получаете решение</h3><h3 data-lang="en">Get a solution</h3><h3 data-lang="tr">Çözüm alın</h3><p data-lang="ru">Я подбираю подходящий способ, сроки и комиссию. Минимальная комиссия — от $5.</p><p data-lang="en">I suggest the best method, timing and fee. Minimum fee starts from $5.</p><p data-lang="tr">En uygun yöntem, süre ve komisyon önerilir. Minimum komisyon $5'ten başlar.</p></div>
-          <div class="dark-card step"><strong>3</strong><h3 data-lang="ru">Проводим операцию</h3><h3 data-lang="en">Complete the operation</h3><h3 data-lang="tr">İşlem tamamlanır</h3><p data-lang="ru">После согласования всё проводится аккуратно, с поддержкой и обратной связью.</p><p data-lang="en">After confirmation, the operation is completed carefully with support and updates.</p><p data-lang="tr">Onaydan sonra işlem destek ve bilgilendirme ile tamamlanır.</p></div>
+          <div class="dark-card step"><strong>1</strong><h3 data-lang="ru">Описываете задачу</h3><h3 data-lang="en">Describe the task</h3><h3 data-lang="tr">İhtiyacı anlatın</h3><p data-lang="ru">Напишите, что нужно: принять оплату, вывести деньги, оплатить сервис, инвойс или товар.</p><p data-lang="en">Tell what you need: receive payment, withdraw funds, pay for a service, invoice or product.</p><p data-lang="tr">Ödeme alma, para çekme, servis, fatura veya ürün ödeme ihtiyacınızı yazın.</p></div>
+          <div class="dark-card step"><strong>2</strong><h3 data-lang="ru">Согласуем условия</h3><h3 data-lang="en">Agree on terms</h3><h3 data-lang="tr">Şartları netleştirelim</h3><p data-lang="ru">Обсуждаем способ, сроки, комиссию и детали. Минимальная комиссия — от $5.</p><p data-lang="en">We discuss the method, timing, fee and details. Minimum fee starts from $5.</p><p data-lang="tr">Yöntem, süre, komisyon ve detaylar konuşulur. Minimum komisyon $5.</p></div>
+          <div class="dark-card step"><strong>3</strong><h3 data-lang="ru">Проводим операцию</h3><h3 data-lang="en">Complete the operation</h3><h3 data-lang="tr">İşlem tamamlanır</h3><p data-lang="ru">После согласования операция проводится аккуратно, с поддержкой и обратной связью.</p><p data-lang="en">After confirmation, the operation is completed carefully with support and updates.</p><p data-lang="tr">Onaydan sonra işlem destek ve bilgilendirme ile tamamlanır.</p></div>
         </div>
       </div>
     </section>
@@ -190,21 +207,32 @@
     <section class="section" id="reviews">
       <div class="wrap">
         <div class="reviews-head">
-          <div><h2 data-lang="ru">Что говорят клиенты</h2><h2 data-lang="en">What clients say</h2><h2 data-lang="tr">Müşteriler ne diyor</h2><p data-lang="ru">Реальные отзывы с VK и долгосрочная работа с клиентами.</p><p data-lang="en">Real VK feedback and long-term client cooperation.</p><p data-lang="tr">Gerçek VK yorumları ve uzun süreli işbirliği.</p></div>
-          <a class="btn primary" href="https://vk.ru/wall238360364_2827" target="_blank" data-lang="ru">Все отзывы VK</a>
-          <a class="btn primary" href="https://vk.ru/wall238360364_2827" target="_blank" data-lang="en">All VK reviews</a>
-          <a class="btn primary" href="https://vk.ru/wall238360364_2827" target="_blank" data-lang="tr">Tüm VK yorumları</a>
+          <div>
+            <h2 data-lang="ru">Отзывы клиентов</h2>
+            <h2 data-lang="en">Client reviews</h2>
+            <h2 data-lang="tr">Müşteri yorumları</h2>
+            <p data-lang="ru">Реальные отзывы VK. Текст переведён для EN/TR версии сайта.</p>
+            <p data-lang="en">Real VK reviews. The text is translated for the English version.</p>
+            <p data-lang="tr">Gerçek VK yorumları. Metin Türkçe sürüm için çevrilmiştir.</p>
+          </div>
+          <a class="btn primary" href="https://vk.ru/wall238360364_2827" target="_blank" data-lang="ru">Открыть все отзывы</a>
+          <a class="btn primary" href="https://vk.ru/wall238360364_2827" target="_blank" data-lang="en">Open all reviews</a>
+          <a class="btn primary" href="https://vk.ru/wall238360364_2827" target="_blank" data-lang="tr">Tüm yorumları aç</a>
         </div>
 
         <div class="reviews">
-          <article class="review"><div class="r-top"><div class="avatar">JS</div><div><div class="r-name">John Swewchik</div><div class="r-sub">18 Nov 2024</div></div></div><div class="stars">★★★★★</div><p>Это не посредник, это молния. Роман всё объяснил, принял оплату, вывел и перевёл деньги. Через два часа средства уже были у меня.</p><a href="https://vk.ru/suwawowudattu" target="_blank">Открыть профиль VK →</a></article>
-          <article class="review"><div class="r-top"><div class="avatar">ДФ</div><div><div class="r-name">Дарья Феленко</div><div class="r-sub">26 May 2026</div></div></div><div class="stars">★★★★★</div><p>Долго искала, через кого можно оплатить API DeepSeek. Быстро, чётко, менеджер помогла по всем вопросам. Оплату провели примерно за 10 минут.</p><a href="https://vk.ru/filinbro" target="_blank">Открыть профиль VK →</a></article>
-          <article class="review"><div class="r-top"><div class="avatar">FB</div><div><div class="r-name">Franco Barbi</div><div class="r-sub">10 Oct 2025</div></div></div><div class="stars">★★★★★</div><p>Получила оплату от иностранного заказчика очень быстро. Не первый раз обращаюсь, всё оперативно, очень хороший посредник.</p><a href="https://vk.ru/leviackerman_01" target="_blank">Открыть профиль VK →</a></article>
-          <article class="review"><div class="r-top"><div class="avatar">НЧ</div><div><div class="r-name">Неизвестный Чувачок</div><div class="r-sub">6 Jun 2026</div></div></div><div class="stars">★★★★★</div><p>Самый лучший посредник без сомнений. Комиссия маленькая, скорость быстрая. Обращаюсь на протяжении полутора лет.</p><a href="https://vk.ru/danilukos" target="_blank">Открыть профиль VK →</a></article>
-          <article class="review"><div class="r-top"><div class="avatar">АА</div><div><div class="r-name">Анри Агеева</div><div class="r-sub">30 Jun 2024</div></div></div><div class="stars">★★★★★</div><p>Перешла от другого посредника, который задерживал выплаты. Здесь всё буквально через пару минут вывели после получения.</p><a href="https://vk.ru/id767787652" target="_blank">Открыть профиль VK →</a></article>
-          <article class="review"><div class="r-top"><div class="avatar">ЕП</div><div><div class="r-name">Евгений Прохоренко</div><div class="r-sub">10 Oct 2025</div></div></div><div class="stars">★★★★★</div><p>Роман помог принять оплату из-за границы на PayPal с последующим выводом на карту. Чётко и без проблем, буду сотрудничать дальше.</p><a href="https://vk.ru/mr.prohorgmail" target="_blank">Открыть профиль VK →</a></article>
-          <article class="review"><div class="r-top"><div class="avatar">ВП</div><div><div class="r-name">Владимир Полькин</div><div class="r-sub">6 May 2026</div></div></div><div class="stars">★★★★★</div><p>Второй раз вывожу с Cults. Всё хорошо и честно. Можете использовать услуги Романа, буду обращаться в дальнейшем.</p><a href="https://vk.ru/mayerok" target="_blank">Открыть профиль VK →</a></article>
-          <article class="review"><div class="r-top"><div class="avatar">АК</div><div><div class="r-name">Артем Куприянов</div><div class="r-sub">17 Mar 2026</div></div></div><div class="stars">★★★★★</div><p>Никто не брался принимать оплату по инвойсу, Роман очень выручил. Всё оперативно и прозрачно.</p><a href="https://vk.ru/splicr" target="_blank">Открыть профиль VK →</a></article>
+          <article class="review"><div class="r-top"><div class="avatar">JS</div><div><div class="r-name">John Swewchik</div><div class="r-sub">18 Nov 2024</div></div></div><div class="stars">★★★★★</div><p data-lang="ru">Это не посредник, это молния. Роман всё объяснил, принял оплату, вывел и перевёл деньги. Через два часа средства уже были у меня.</p><p data-lang="en">Not just a payment partner — lightning fast. Roman explained everything, received the payment, withdrew and transferred the funds. In two hours the money was already with me.</p><p data-lang="tr">Sadece aracı değil, gerçekten çok hızlı. Roman her şeyi açıkladı, ödemeyi aldı, çekti ve gönderdi. İki saat içinde para bendeydi.</p><a href="https://vk.ru/suwawowudattu" target="_blank">VK →</a></article>
+          <article class="review"><div class="r-top"><div class="avatar">DF</div><div><div class="r-name">Дарья Феленко</div><div class="r-sub">26 May 2026</div></div></div><div class="stars">★★★★★</div><p data-lang="ru">Долго искала, через кого можно оплатить API DeepSeek. Быстро, чётко, менеджер провела по всем вопросам. Оплату провели примерно за 10 минут.</p><p data-lang="en">I was looking for a way to pay for the DeepSeek API. Everything was fast and clear, the manager guided me through all questions. The payment took about 10 minutes.</p><p data-lang="tr">DeepSeek API ödemesi için çözüm arıyordum. Her şey hızlı ve netti, tüm sorularda yardımcı oldular. Ödeme yaklaşık 10 dakika sürdü.</p><a href="https://vk.ru/filinbro" target="_blank">VK →</a></article>
+          <article class="review"><div class="r-top"><div class="avatar">FB</div><div><div class="r-name">Franco Barbi</div><div class="r-sub">10 Oct 2025</div></div></div><div class="stars">★★★★★</div><p data-lang="ru">Получила оплату от иностранного заказчика очень быстро. Не первый раз обращаюсь, всё оперативно. Очень хороший посредник.</p><p data-lang="en">I received a payment from a foreign client very quickly. This was not my first time working with Roman — everything was fast and professional.</p><p data-lang="tr">Yabancı müşteriden ödemeyi çok hızlı aldım. İlk kez çalışmıyorum, her şey hızlı ve profesyonel.</p><a href="https://vk.ru/leviackerman_01" target="_blank">VK →</a></article>
+          <article class="review"><div class="r-top"><div class="avatar">NC</div><div><div class="r-name">Неизвестный Чувачок</div><div class="r-sub">6 Jun 2026</div></div></div><div class="stars">★★★★★</div><p data-lang="ru">Лучший посредник без сомнений. Комиссия маленькая, скорость быстрая. Обращаюсь на протяжении полутора лет.</p><p data-lang="en">The best payment partner, no doubt. Low fee and fast speed. I have been using the service for about a year and a half.</p><p data-lang="tr">Şüphesiz en iyi ödeme partneri. Komisyon düşük, işlem hızlı. Yaklaşık bir buçuk yıldır çalışıyorum.</p><a href="https://vk.ru/danilukos" target="_blank">VK →</a></article>
+          <article class="review"><div class="r-top"><div class="avatar">AA</div><div><div class="r-name">Анри Агеева</div><div class="r-sub">30 Jun 2024</div></div></div><div class="stars">★★★★★</div><p data-lang="ru">Перешла от другого посредника, который задерживал выплаты. Здесь всё буквально через пару минут вывели после получения.</p><p data-lang="en">I switched from another intermediary who delayed payouts. Here the funds were withdrawn literally within minutes after receiving them.</p><p data-lang="tr">Ödemeleri geciktiren başka bir aracıyı bıraktım. Burada para alındıktan birkaç dakika sonra gönderildi.</p><a href="https://vk.ru/id767787652" target="_blank">VK →</a></article>
+          <article class="review"><div class="r-top"><div class="avatar">EP</div><div><div class="r-name">Евгений Прохоренко</div><div class="r-sub">10 Oct 2025</div></div></div><div class="stars">★★★★★</div><p data-lang="ru">Роман помог принять оплату из-за границы на PayPal с последующим выводом на карту. Чётко и без проблем.</p><p data-lang="en">Roman helped receive a foreign PayPal payment and withdraw it to a card. Clear and without any issues.</p><p data-lang="tr">Roman, yurtdışından PayPal ödemesi alıp karta çekmeme yardımcı oldu. Net ve sorunsuz.</p><a href="https://vk.ru/mr.prohorgmail" target="_blank">VK →</a></article>
+          <article class="review"><div class="r-top"><div class="avatar">VP</div><div><div class="r-name">Владимир Полькин</div><div class="r-sub">6 May 2026</div></div></div><div class="stars">★★★★★</div><p data-lang="ru">Второй раз вывожу с Cults. Всё хорошо и честно. Можно пользоваться услугами Романа, буду обращаться дальше.</p><p data-lang="en">This is my second withdrawal from Cults. Everything is good and honest. I will keep using Roman’s services.</p><p data-lang="tr">Cults'tan ikinci kez para çekiyorum. Her şey iyi ve dürüst. Roman'ın hizmetlerini kullanmaya devam edeceğim.</p><a href="https://vk.ru/mayerok" target="_blank">VK →</a></article>
+          <article class="review"><div class="r-top"><div class="avatar">AK</div><div><div class="r-name">Артем Куприянов</div><div class="r-sub">17 Mar 2026</div></div></div><div class="stars">★★★★★</div><p data-lang="ru">Никто не брался принимать оплату по инвойсу, Роман очень выручил. Всё оперативно и прозрачно.</p><p data-lang="en">Nobody wanted to handle an invoice payment, but Roman really helped. Everything was fast and transparent.</p><p data-lang="tr">Kimse fatura ödemesini almak istemedi, Roman gerçekten yardımcı oldu. Her şey hızlı ve şeffaftı.</p><a href="https://vk.ru/splicr" target="_blank">VK →</a></article>
+          <article class="review"><div class="r-top"><div class="avatar">AG</div><div><div class="r-name">Анастасия Гращенко</div><div class="r-sub">28 Jun 2026</div></div></div><div class="stars">★★★★★</div><p data-lang="ru">Всё прошло отлично. Помог принять оплату из-за границы на PayPal и Wise. Рекомендую.</p><p data-lang="en">Everything went great. Helped receive a payment from abroad via PayPal and Wise. Recommended.</p><p data-lang="tr">Her şey çok iyi geçti. PayPal ve Wise üzerinden yurtdışından ödeme almama yardımcı oldu. Tavsiye ederim.</p><a href="https://vk.ru/graschaaa" target="_blank">VK →</a></article>
+          <article class="review"><div class="r-top"><div class="avatar">OS</div><div><div class="r-name">Oksana Sunagatova</div><div class="r-sub">25 Jun 2026</div></div></div><div class="stars">★★★★★</div><p data-lang="ru">Долго не могла найти способ оплатить в Индонезию, всё сделали очень быстро и чётко.</p><p data-lang="en">I couldn’t find a way to pay to Indonesia for a long time. Everything was done very quickly and clearly.</p><p data-lang="tr">Endonezya'ya ödeme yapmanın yolunu uzun süre bulamadım. Her şey çok hızlı ve net yapıldı.</p><a href="https://vk.ru/sanramires" target="_blank">VK →</a></article>
+          <article class="review"><div class="r-top"><div class="avatar">NI</div><div><div class="r-name">Nvpr Implant</div><div class="r-sub">19 Jun 2026</div></div></div><div class="stars">★★★★★</div><p data-lang="ru">Помог пополнить счёт на японском сайте. Всё оперативно и понятно, обращусь ещё раз.</p><p data-lang="en">Helped top up an account on a Japanese website. Everything was fast and clear. I will use the service again.</p><p data-lang="tr">Japon sitesindeki hesabıma bakiye yüklememe yardımcı oldu. Her şey hızlı ve netti.</p><a href="https://vk.ru/nvprimplant" target="_blank">VK →</a></article>
+          <article class="review"><div class="r-top"><div class="avatar">SK</div><div><div class="r-name">Silverus Kvassus</div><div class="r-sub">16 Mar 2026</div></div></div><div class="stars">★★★★★</div><p data-lang="ru">Оперативно сработали, подробно отвечали на все вопросы. Буду обращаться снова.</p><p data-lang="en">Very fast work, with detailed answers to all questions. I will definitely come back again.</p><p data-lang="tr">Çok hızlı çalıştılar ve tüm soruları detaylı yanıtladılar. Tekrar başvuracağım.</p><a href="https://vk.ru/kvassus" target="_blank">VK →</a></article>
         </div>
       </div>
     </section>
@@ -213,47 +241,37 @@
       <div class="wrap about-grid">
         <div class="about-card">
           <h2 data-lang="ru">О realShuma</h2><h2 data-lang="en">About realShuma</h2><h2 data-lang="tr">realShuma hakkında</h2>
-          <p class="quote" data-lang="ru">Доброго времени суток ✌️ Меня зовут Roman. Я помогаю с международными платежами, приёмом оплат, оплатой товаров, счетов и зарубежных сервисов через PayPal и другие платёжные инструменты.</p>
-          <p class="quote" data-lang="en">My name is Roman. I help with international payments, receiving payments, paying invoices, goods and digital services through PayPal and other payment tools.</p>
-          <p class="quote" data-lang="tr">Ben Roman. PayPal ve diğer ödeme araçlarıyla uluslararası ödemeler, ödeme alma, fatura ve dijital servis ödemeleri konusunda yardımcı oluyorum.</p>
+          <p class="quote" data-lang="ru">Доброго времени суток ✌️ Меня зовут Roman. Я имею открытые счета в иностранных банках и помогаю проводить международные операции с помощью PayPal и других платёжных инструментов.</p>
+          <p class="quote" data-lang="en">My name is Roman. I work with international payment tools and help clients receive, send and withdraw payments through PayPal and other platforms.</p>
+          <p class="quote" data-lang="tr">Ben Roman. Uluslararası ödeme araçlarıyla çalışıyorum ve müşterilerin PayPal ve diğer platformlar üzerinden ödeme almasına, göndermesine ve çekmesine yardımcı oluyorum.</p>
           <div class="check">
+            <div data-lang="ru">Приём оплаты</div><div data-lang="en">Receiving payments</div><div data-lang="tr">Ödeme alma</div>
+            <div data-lang="ru">Оплата товаров, счетов и сервисов</div><div data-lang="en">Paying goods, invoices and services</div><div data-lang="tr">Ürün, fatura ve servis ödemeleri</div>
             <div data-lang="ru">Работаю с 2022 года</div><div data-lang="en">Working since 2022</div><div data-lang="tr">2022'den beri çalışıyorum</div>
-            <div data-lang="ru">600+ положительных отзывов</div><div data-lang="en">600+ positive reviews</div><div data-lang="tr">600+ olumlu yorum</div>
-            <div data-lang="ru">Комиссия индивидуально, минимум от $5</div><div data-lang="en">Individual fee, minimum from $5</div><div data-lang="tr">Kişisel komisyon, minimum $5</div>
-            <div data-lang="ru">Быстрые ответы и постоянная связь</div><div data-lang="en">Fast replies and constant communication</div><div data-lang="tr">Hızlı yanıt ve sürekli iletişim</div>
+            <div data-lang="ru">Более 600 положительных отзывов</div><div data-lang="en">More than 600 positive reviews</div><div data-lang="tr">600'den fazla olumlu yorum</div>
           </div>
         </div>
         <div class="about-card">
-          <h2 data-lang="ru">Почему выбирают RealShuma</h2><h2 data-lang="en">Why choose RealShuma</h2><h2 data-lang="tr">Neden RealShuma</h2>
-          <div class="cards gridlang" data-lang="ru" style="grid-template-columns:1fr 1fr">
-            <div class="dark-card"><h3>Прозрачность</h3><p>Заранее обсуждаем способ, сроки и комиссию.</p></div>
-            <div class="dark-card"><h3>Опыт</h3><p>Платежные задачи с 2022 года и сотни отзывов.</p></div>
-            <div class="dark-card"><h3>Гибкость</h3><p>PayPal, Wise, Payoneer, крипта, инвойсы, сервисы.</p></div>
-            <div class="dark-card"><h3>Поддержка</h3><p>Можно задать вопросы до и во время операции.</p></div>
+          <h2 data-lang="ru">Почему выбирают меня</h2><h2 data-lang="en">Why clients choose me</h2><h2 data-lang="tr">Neden beni seçiyorlar</h2>
+          <div class="check">
+            <div data-lang="ru">Индивидуальный подход к каждой операции</div><div data-lang="en">Individual approach to every operation</div><div data-lang="tr">Her işlem için kişisel yaklaşım</div>
+            <div data-lang="ru">Комиссия обсуждается заранее, минимум от $5</div><div data-lang="en">Fee is discussed in advance, minimum from $5</div><div data-lang="tr">Komisyon önceden konuşulur, minimum $5</div>
+            <div data-lang="ru">Быстрая связь через Telegram и WhatsApp</div><div data-lang="en">Fast communication via Telegram and WhatsApp</div><div data-lang="tr">Telegram ve WhatsApp ile hızlı iletişim</div>
+            <div data-lang="ru">Поддержка нестандартных задач</div><div data-lang="en">Support for non-standard payment tasks</div><div data-lang="tr">Standart olmayan ödeme işleri için destek</div>
+            <div data-lang="ru">Отзывы и история работы с 2022 года</div><div data-lang="en">Reviews and work history since 2022</div><div data-lang="tr">2022'den beri yorumlar ve iş geçmişi</div>
           </div>
-          <div class="cards gridlang" data-lang="en" style="grid-template-columns:1fr 1fr">
-            <div class="dark-card"><h3>Transparency</h3><p>Method, timing and fee are discussed in advance.</p></div>
-            <div class="dark-card"><h3>Experience</h3><p>Payment tasks since 2022 and hundreds of reviews.</p></div>
-            <div class="dark-card"><h3>Flexibility</h3><p>PayPal, Wise, Payoneer, crypto, invoices and services.</p></div>
-            <div class="dark-card"><h3>Support</h3><p>You can ask questions before and during the operation.</p></div>
-          </div>
-          <div class="cards gridlang" data-lang="tr" style="grid-template-columns:1fr 1fr">
-            <div class="dark-card"><h3>Şeffaflık</h3><p>Yöntem, süre ve komisyon önceden konuşulur.</p></div>
-            <div class="dark-card"><h3>Deneyim</h3><p>2022'den beri ödeme işlemleri ve yüzlerce yorum.</p></div>
-            <div class="dark-card"><h3>Esneklik</h3><p>PayPal, Wise, Payoneer, kripto, fatura ve servisler.</p></div>
-            <div class="dark-card"><h3>Destek</h3><p>İşlem öncesi ve sırasında soru sorabilirsiniz.</p></div>
-          </div>
+          <a class="btn primary" href="https://t.me/realshuma" target="_blank" style="margin-top:28px">✈️ Telegram</a>
         </div>
       </div>
     </section>
 
     <section class="section" id="faq">
       <div class="wrap">
-        <div class="head"><h2 data-lang="ru">Часто задаваемые вопросы</h2><h2 data-lang="en">FAQ</h2><h2 data-lang="tr">Sık sorulan sorular</h2></div>
+        <div class="head"><h2 data-lang="ru">FAQ</h2><h2 data-lang="en">FAQ</h2><h2 data-lang="tr">SSS</h2></div>
         <div class="faq">
-          <details open><summary data-lang="ru">Какая комиссия?</summary><summary data-lang="en">What is the fee?</summary><summary data-lang="tr">Komisyon ne kadar?</summary><p data-lang="ru">Комиссия рассчитывается индивидуально под задачу. Минимальная комиссия — от $5.</p><p data-lang="en">The fee is calculated individually for each task. Minimum fee starts from $5.</p><p data-lang="tr">Komisyon her iş için ayrı hesaplanır. Minimum komisyon $5'ten başlar.</p></details>
-          <details><summary data-lang="ru">Какие сервисы можно оплатить?</summary><summary data-lang="en">Which services can be paid?</summary><summary data-lang="tr">Hangi servisler ödenebilir?</summary><p data-lang="ru">PayPal, Wise, Payoneer, AI-сервисы, API, маркетплейсы, инвойсы, подписки, зарубежные товары и цифровые платформы.</p><p data-lang="en">PayPal, Wise, Payoneer, AI services, APIs, marketplaces, invoices, subscriptions, foreign goods and digital platforms.</p><p data-lang="tr">PayPal, Wise, Payoneer, AI servisleri, API, pazar yerleri, faturalar, abonelikler ve dijital platformlar.</p></details>
-          <details><summary data-lang="ru">Сколько времени занимает операция?</summary><summary data-lang="en">How long does it take?</summary><summary data-lang="tr">Ne kadar sürer?</summary><p data-lang="ru">Зависит от способа оплаты, платформы и страны. Простые задачи часто решаются быстро, сложные требуют проверки деталей.</p><p data-lang="en">It depends on the payment method, platform and country. Simple tasks are often fast; complex ones require detail checks.</p><p data-lang="tr">Ödeme yöntemi, platform ve ülkeye bağlıdır. Basit işlemler hızlıdır, karmaşık olanlar detay kontrolü ister.</p></details>
+          <details open><summary data-lang="ru">Какая комиссия?</summary><summary data-lang="en">What is the fee?</summary><summary data-lang="tr">Komisyon ne kadar?</summary><p data-lang="ru">Комиссия рассчитывается индивидуально под задачу. Минимальная комиссия — от $5.</p><p data-lang="en">The fee is calculated individually. Minimum fee starts from $5.</p><p data-lang="tr">Komisyon işleme göre hesaplanır. Minimum $5.</p></details>
+          <details><summary data-lang="ru">С какими сервисами работаете?</summary><summary data-lang="en">Which services do you work with?</summary><summary data-lang="tr">Hangi servislerle çalışıyorsunuz?</summary><p data-lang="ru">PayPal, Wise, Payoneer, крипта, инвойсы, AI-сервисы, API, маркетплейсы, VGen, Cults и другие зарубежные платформы.</p><p data-lang="en">PayPal, Wise, Payoneer, crypto, invoices, AI services, APIs, marketplaces, VGen, Cults and other international platforms.</p><p data-lang="tr">PayPal, Wise, Payoneer, kripto, faturalar, AI servisleri, API, pazar yerleri, VGen, Cults ve diğer platformlar.</p></details>
+          <details><summary data-lang="ru">Как быстро проходит операция?</summary><summary data-lang="en">How fast is the operation?</summary><summary data-lang="tr">İşlem ne kadar hızlı?</summary><p data-lang="ru">Зависит от сервиса, суммы, страны и способа оплаты. Простые операции могут проходить быстро, сложные требуют проверки деталей.</p><p data-lang="en">It depends on the service, amount, country and payment method. Simple operations can be fast, complex ones need checks.</p><p data-lang="tr">Servis, tutar, ülke ve ödeme yöntemine bağlıdır. Basit işlemler hızlı olabilir, karmaşık işlemler kontrol gerektirir.</p></details>
           <details><summary data-lang="ru">Как связаться?</summary><summary data-lang="en">How to contact?</summary><summary data-lang="tr">Nasıl iletişim kurulur?</summary><p>Telegram: t.me/realshuma · WhatsApp: wa.me/79042220808 · Email: RealShuma@mail.ru</p></details>
         </div>
       </div>
@@ -261,10 +279,13 @@
 
     <section class="section dark" id="contact">
       <div class="wrap">
-        <div class="head"><h2 data-lang="ru">Контакты</h2><h2 data-lang="en">Contact</h2><h2 data-lang="tr">İletişim</h2><p data-lang="ru">Напишите и опишите вашу задачу — подберём решение.</p><p data-lang="en">Message me and describe your task — we will find a solution.</p><p data-lang="tr">Yazın ve ihtiyacınızı anlatın — çözüm bulalım.</p></div>
+        <div class="head">
+          <h2 data-lang="ru">Связаться со мной</h2><h2 data-lang="en">Contact me</h2><h2 data-lang="tr">Benimle iletişim</h2>
+          <p data-lang="ru">Напишите задачу — отвечу и подскажу возможный вариант.</p><p data-lang="en">Send your task — I will reply and suggest a possible solution.</p><p data-lang="tr">İhtiyacınızı yazın — cevap verip çözüm önereceğim.</p>
+        </div>
         <div class="contact-grid">
-          <div class="contact-card"><h3>Telegram</h3><a href="https://t.me/realshuma" target="_blank">t.me/realshuma</a><a class="btn primary contact-btn" href="https://t.me/realshuma" target="_blank">✈️ Telegram</a></div>
-          <div class="contact-card"><h3>WhatsApp</h3><a href="https://wa.me/79042220808" target="_blank">wa.me/79042220808</a><a class="btn primary contact-btn" href="https://wa.me/79042220808" target="_blank">💬 WhatsApp</a></div>
+          <div class="contact-card"><h3>Telegram</h3><a href="https://t.me/realshuma" target="_blank">t.me/realshuma</a><a class="btn primary" href="https://t.me/realshuma" target="_blank">✈️ Telegram</a></div>
+          <div class="contact-card"><h3>WhatsApp</h3><a href="https://wa.me/79042220808" target="_blank">wa.me/79042220808</a><a class="btn primary" href="https://wa.me/79042220808" target="_blank">💬 WhatsApp</a></div>
           <div class="contact-card"><h3>Email / Social</h3><a href="mailto:RealShuma@mail.ru">RealShuma@mail.ru</a><a href="https://instagram.com/realshuma" target="_blank">Instagram: realshuma</a><a href="https://x.com/realshuma" target="_blank">X: realshuma</a></div>
         </div>
       </div>
@@ -284,10 +305,10 @@
     function setLang(lang){
       document.body.className = 'lang-' + lang;
       ['ru','en','tr'].forEach(function(l){
-        var b=document.getElementById('b-'+l);
-        if(b) b.classList.toggle('active', l===lang);
+        var b = document.getElementById('b-' + l);
+        if(b) b.classList.toggle('active', l === lang);
       });
-      try{localStorage.setItem('realshuma_lang', lang)}catch(e){}
+      try{ localStorage.setItem('realshuma_lang', lang); }catch(e){}
     }
     setLang(localStorage.getItem('realshuma_lang') || 'ru');
   </script>
