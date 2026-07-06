@@ -1,142 +1,186 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RealShuma — Global Payment Solutions</title>
-  <meta name="description" content="International payment solutions for freelancers, businesses and digital creators. PayPal, crypto, bank transfers and payment support since 2022.">
+  <title>RealShuma — International Payment Solutions</title>
+  <meta name="description" content="International payment solutions for freelancers, creators and businesses. PayPal, Wise, crypto, invoices and global payments support since 2022.">
   <style>
-    *{box-sizing:border-box;margin:0;padding:0}
-    body{font-family:Arial,sans-serif;background:#f4f7fb;color:#0b1324;line-height:1.6}
-    a{text-decoration:none;color:inherit}
-    .hero{min-height:100vh;background:linear-gradient(135deg,#07142d,#006b66);color:white;padding:38px 24px;text-align:center;display:flex;flex-direction:column;justify-content:center}
-    .logo{font-size:44px;font-weight:800;margin-bottom:12px}
-    .tag{font-size:22px;color:#bff7ef;margin-bottom:24px}
-    .hero h1{font-size:42px;line-height:1.15;margin-bottom:20px}
-    .hero p{font-size:20px;max-width:760px;margin:0 auto 28px;color:#e8f4f3}
-    .buttons{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
-    .btn{background:#17c3b2;color:white;padding:16px 26px;border-radius:16px;font-weight:700;font-size:18px}
-    .btn.secondary{background:white;color:#07142d}
-    section{padding:70px 24px;max-width:1150px;margin:auto}
-    h2{font-size:38px;margin-bottom:28px}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
-    .card{background:white;border-radius:24px;padding:28px;box-shadow:0 16px 35px rgba(0,0,0,.08)}
-    .card h3{font-size:24px;color:#087c73;margin-bottom:12px}
-    .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:18px;margin-top:35px}
-    .stat{background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.25);border-radius:22px;padding:22px}
-    .stat b{display:block;font-size:34px}
-    .light{background:#eaf7f5;max-width:none}
-    .inner{max-width:1150px;margin:auto}
-    .review{font-size:18px}
-    .review span{display:block;margin-top:14px;color:#087c73;font-weight:700}
-    .langs{position:fixed;top:12px;left:50%;transform:translateX(-50%);z-index:20;display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
-    .langs button{border:0;border-radius:999px;padding:10px 16px;background:#17c3b2;color:white;font-weight:700}
-    footer{background:#07142d;color:white;text-align:center;padding:34px 20px}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,Arial,sans-serif;background:#f5f8fb;color:#0f172a;line-height:1.5}
+    a{color:inherit}
+    header{background:#06142f;color:white;padding:26px 20px;text-align:center}
+    .logo{font-size:38px;font-weight:800}
+    .tagline{font-size:18px;color:#cbd5e1;margin-top:8px}
+    .lang{margin-top:22px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+    .lang button{border:0;background:#14b8a6;color:white;padding:12px 22px;border-radius:999px;font-weight:800;font-size:16px;cursor:pointer}
+    .hero{background:linear-gradient(135deg,#06142f,#0f766e);color:white;text-align:center;padding:90px 22px}
+    .hero h1{font-size:44px;line-height:1.1;margin:0 0 24px}
+    .hero p{font-size:23px;max-width:780px;margin:0 auto 34px;color:#e2e8f0}
+    .btn{display:inline-block;background:#14b8a6;color:white;text-decoration:none;padding:18px 34px;border-radius:18px;font-size:20px;font-weight:800}
+    section{max-width:1120px;margin:auto;padding:70px 22px}
+    h2{font-size:42px;line-height:1.15;margin:0 0 32px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px}
+    .card{background:white;padding:28px;border-radius:24px;box-shadow:0 14px 35px rgba(15,23,42,.08)}
+    .card h3{color:#0f766e;font-size:24px;margin:0 0 14px}
+    .card p{font-size:18px;margin:0}
+    .reviews{background:#eefafa}
+    .review-name{font-weight:800;font-size:20px;color:#0f766e}
+    .review-date{font-size:14px;color:#64748b;margin:4px 0 14px}
+    .review-link{display:inline-block;margin-top:16px;color:#0f766e;font-weight:800;text-decoration:none}
+    .faq .card{margin-bottom:18px}
+    footer{background:#06142f;color:white;text-align:center;padding:34px 20px}
+    .hidden{display:none}
     max-width:600px{
-      .hero{padding-top:90px}
-      .hero h1{font-size:34px}
-      .logo{font-size:36px}
-      h2{font-size:32px}
+      .hero h1{font-size:36px}
+      .hero p{font-size:20px}
+      h2{font-size:36px}
+      section{padding:55px 18px}
     }
   </style>
 </head>
 <body>
 
-<div class="langs">
-  <button onclick="setLang('en')">🇬🇧 English</button>
-  <button onclick="setLang('tr')">🇹🇷 Türkçe</button>
-  <button onclick="setLang('ru')">🇷🇺 Русский</button>
-</div>
-
-<header class="hero">
+<header>
   <div class="logo">RealShuma</div>
-  <div class="tag" data-ru="Международные платежные решения" data-en="Global Payment Solutions" data-tr="Global Ödeme Çözümleri"></div>
-  <h1 data-ru="Международные платежные решения для людей и бизнеса" data-en="International payment solutions for people and businesses" data-tr="Kişiler ve işletmeler için uluslararası ödeme çözümleri"></h1>
-  <p data-ru="Помогаем фрилансерам, компаниям и создателям цифрового контента получать, отправлять и обрабатывать международные платежи." data-en="We help freelancers, businesses and digital creators receive, send and manage international payments." data-tr="Freelancerlara, işletmelere ve dijital içerik üreticilerine uluslararası ödemeleri alma, gönderme ve yönetme konusunda yardımcı oluyoruz."></p>
-  <div class="buttons">
-    <a class="btn" href="https://t.me/realshuma">Telegram</a>
-    <a class="btn secondary" href="mailto:Realshuma@mail.ru">Email</a>
-  </div>
-  <div class="stats">
-    <div class="stat"><b>2022</b><span data-ru="Работаем с" data-en="Since" data-tr="Kuruluş"></span></div>
-    <div class="stat"><b>500+</b><span data-ru="отзывов" data-en="reviews" data-tr="yorum"></span></div>
-    <div class="stat"><b>20+</b>
-
-
-<span data-ru="стран" data-en="countries" data-tr="ülke"></span></div>
-    <div class="stat"><b>24/7</b><span data-ru="поддержка" data-en="support" data-tr="destek"></span></div>
+  <div class="tagline" data-en="International Payment Solutions" data-tr="Uluslararası Ödeme Çözümleri" data-ru="Международные платежные решения">International Payment Solutions</div>
+  <div class="lang">
+    <button onclick="setLang('en')">🇬🇧 English</button>
+    <button onclick="setLang('tr')">🇹🇷 Türkçe</button>
+    <button onclick="setLang('ru')">🇷🇺 Русский</button>
   </div>
 </header>
 
+<div class="hero">
+  <h1 data-en="International Payment Solutions" data-tr="Uluslararası Ödeme Çözümleri" data-ru="Международные платежные решения">International Payment Solutions</h1>
+  <p data-en="Helping freelancers, creators, businesses and private clients receive and send payments worldwide."
+     data-tr="Freelancerlar, içerik üreticileri, işletmeler ve bireysel müşteriler için dünya çapında ödeme alma ve gönderme desteği."
+     data-ru="Помогаем фрилансерам, создателям контента, компаниям и частным клиентам получать и отправлять платежи по всему миру.">
+     Helping freelancers, creators, businesses and private clients receive and send payments worldwide.
+  </p>
+  <a class="btn" href="https://t.me/realshuma" target="_blank"
+     data-en="Contact via Telegram"
+     data-tr="Telegram üzerinden iletişime geç"
+     data-ru="Связаться через Telegram">Contact via Telegram</a>
+</div>
+
 <section>
-  <h2 data-ru="Почему клиенты выбирают RealShuma" data-en="Why clients choose RealShuma" data-tr="Müşteriler neden RealShuma'yı seçiyor"></h2>
+  <h2 data-en="Why clients trust RealShuma" data-tr="Müşteriler neden RealShuma’ya güveniyor" data-ru="Почему клиенты доверяют RealShuma">Why clients trust RealShuma</h2>
   <div class="grid">
-    <div class="card"><h3 data-ru="Опыт с 2022 года" data-en="Experience since 2022" data-tr="2022'den beri deneyim"></h3><p data-ru="Практический опыт работы с международными платежами и цифровыми платформами." data-en="Practical experience with international payments and digital platforms." data-tr="Uluslararası ödemeler ve dijital platformlarla pratik deneyim."></p></div>
-    <div class="card"><h3 data-ru="500+ отзывов" data-en="500+ reviews" data-tr="500+ yorum"></h3><p data-ru="Подтвержденные отзывы клиентов и долгосрочное сотрудничество." data-en="Verified client reviews and long-term cooperation." data-tr="Doğrulanmış müşteri yorumları ve uzun vadeli işbirliği."></p></div>
-    <div class="card"><h3 data-ru="Международный фокус" data-en="International focus" data-tr="Uluslararası odak"></h3><p data-ru="Ориентируемся на клиентов из Турции, Европы, СНГ и других регионов." data-en="Focused on clients from Turkey, Europe, CIS countries and other regions." data-tr="Türkiye, Avrupa, BDT ülkeleri ve diğer bölgelerden müşterilere odaklı."></p></div>
-    <div class="card"><h3 data-ru="Быстрая связь" data-en="Fast communication" data-tr="Hızlı iletişim"></h3><p data-ru="Связь через Telegram, WhatsApp и электронную почту." data-en="Communication via Telegram, WhatsApp and email." data-tr="Telegram, WhatsApp ve e-posta üzerinden iletişim."></p></div>
-  </div>
-</section>
+    <div class="card"><h3 data-en="Since 2022" data-tr="2022’den beri" data-ru="С 2022 года">Since 2022</h3><
+Shuma
+Shuma
+t.me
 
-<section class="light">
-  <div class="inner">
-    <h2 data-ru="Услуги" data-en="Services" data-tr="Hizmetler"></h2>
-    <div class="grid">
-      <div class="card"><h3>PayPal</h3><p data-ru="Помощь с получением и выводом платежей через PayPal." data-en="Help with receiving and withdrawing PayPal payments." data-tr="PayPal ödemelerini alma ve çekme konusunda destek."></p></div>
-      <div class="card"><h3 data-ru="Фриланс выплаты" data-en="Freelancer payouts" data-tr="Freelancer ödemeleri"></h3><p data-ru="Решения для фрилансеров, дизайнеров, авторов и digital creators." data-en="Solutions for freelancers, designers, creators and digital professionals." data-tr="Freelancerlar, tasarımcılar ve dijital içerik üreticileri için çözümler."></p></div>
-      <div class="card"><h3 data-ru="Криптовалюта и фиат" data-en="Crypto and fiat" data-tr="Kripto ve fiat"></h3><p data-ru="Помощь с платежами через криптовалюты, стейблкоины и банковские валюты." data-en="Support with crypto, stablecoins and fiat payment solutions." data-tr="Kripto, stablecoin ve fiat ödeme çözümleri desteği."></p></div>
-      <div class="card"><h3 data-ru="Международные переводы" data-en="International transfers" data-tr="Uluslararası transferler"></h3><p data-ru="Поддержка международных платежных задач для частных лиц и бизнеса." data-en="Support for international payment needs for individuals and businesses." data-tr="Bireyler ve işletmeler için uluslararası ödeme desteği."></p></div>
-    </div>
+
+p data-en="Experience with international payments and digital platforms." data-tr="Uluslararası ödemeler ve dijital platformlarla deneyim." data-ru="Опыт работы с международными платежами и цифровыми платформами.">Experience with international payments and digital platforms.</p></div>
+    <div class="card"><h3 data-en="500+ Reviews" data-tr="500+ Yorum" data-ru="500+ отзывов">500+ Reviews</h3><p data-en="Verified client feedback and long-term cooperation." data-tr="Doğrulanmış müşteri yorumları ve uzun vadeli iş birliği." data-ru="Подтвержденные отзывы клиентов и долгосрочное сотрудничество.">Verified client feedback and long-term cooperation.</p></div>
+    <div class="card"><h3 data-en="Worldwide Support" data-tr="Dünya çapında destek" data-ru="Международная поддержка">Worldwide Support</h3><p data-en="Support for clients from Turkey, Europe, CIS and other regions." data-tr="Türkiye, Avrupa, BDT ve diğer bölgelerden müşteriler için destek." data-ru="Поддержка клиентов из Турции, Европы, СНГ и других регионов.">Support for clients from Turkey, Europe, CIS and other regions.</p></div>
+    <div class="card"><h3 data-en="Fast Communication" data-tr="Hızlı iletişim" data-ru="Быстрая связь">Fast Communication</h3><p data-en="Quick replies via Telegram, WhatsApp and email." data-tr="Telegram, WhatsApp ve e-posta üzerinden hızlı yanıtlar." data-ru="Быстрые ответы через Telegram, WhatsApp и email.">Quick replies via Telegram, WhatsApp and email.</p></div>
   </div>
 </section>
 
 <section>
-  <h2 data-ru="Отзывы" data-en="Reviews" data-tr="Yorumlar"></h2>
+  <h2 data-en="Services" data-tr="Hizmetler" data-ru="Услуги">Services</h2>
   <div class="grid">
-    <div class="card review">★★★★★
-
-<b data-ru="Более 500 подтвержденных отзывов с 2022 года." data-en="More than 500 verified reviews since 2022." data-tr="2022'den beri 500'den fazla doğrulanmış yorum."></b><p data-ru="Здесь будут добавлены реальные отзывы клиентов со ссылками и скриншотами." data-en="Real client reviews with links and screenshots will be added here." data-tr="Gerçek müşteri yorumları, bağlantılar ve ekran görüntüleri burada eklenecek."></p><span>RealShuma</span></div>
+    <div class="card"><h3>PayPal</h3><p data-en="Receiving, sending and withdrawal support for PayPal payments." data-tr="PayPal ödemeleri alma, gönderme ve çekme desteği." data-ru="Помощь с приемом, отправкой и выводом платежей через PayPal.">Receiving, sending and withdrawal support for PayPal payments.</p></div>
+    <div class="card"><h3 data-en="Freelancer payouts" data-tr="Freelancer ödemeleri" data-ru="Выплаты фрилансерам">Freelancer payouts</h3><p data-en="Payment solutions for creators, artists, developers and freelancers." data-tr="İçerik üreticileri, sanatçılar, geliştiriciler ve freelancerlar için ödeme çözümleri." data-ru="Платежные решения для авторов, художников, разработчиков и фрилансеров.">Payment solutions for creators, artists, developers and freelancers.</p></div>
+    <div class="card"><h3 data-en="Crypto and fiat" data-tr="Kripto ve fiat" data-ru="Криптовалюта и фиат">Crypto and fiat</h3><p data-en="Support with crypto, stablecoins, cards and bank transfers." data-tr="Kripto, stablecoin, kartlar ve banka transferleri desteği." data-ru="Помощь с криптовалютами, стейблкоинами, картами и банковскими переводами.">Support with crypto, stablecoins, cards and bank transfers.</p></div>
+    <div class="card"><h3 data-en="Invoices and platforms" data-tr="Faturalar ve platformlar" data-ru="Инвойсы и платформы">Invoices and platforms</h3><p data-en="Help with payments for digital platforms, invoices, APIs and online services." data-tr="Dijital platformlar, faturalar, API’ler ve online servisler için ödeme desteği." data-ru="Помощь с оплатами цифровых платформ, инвойсов, API и онлайн-сервисов.">Help with payments for digital platforms, invoices, APIs and online services.</p></div>
   </div>
 </section>
 
-<section class="light">
-  <div class="inner">
-    <h2 data-ru="Часто задаваемые вопросы" data-en="FAQ" data-tr="Sıkça Sorulan
+<section class="reviews">
+  <h2 data-en="Verified reviews" data-tr="Doğrulanmış yorumlar" data-ru="Подтвержденные отзывы">Verified reviews</h2>
+  <div class="grid">
+
+    <div class="card"><div class="review-name">John Swewchik</div><div class="review-date">18 Nov 2024</div><p>“Это не посредник, это молния. Нет других слов, чтобы описать скорость ответов и оперативность. Принял оплату, вывел и перевёл деньги. Через два часа средства уже были у меня.”</p><a class="review-link" href="https://vk.ru/suwawowudattu" target="_blank">View VK profile</a></div>
+
+    <div class="card"><div class="review-name">Дарья Феленко</div><div class="review-date">26 May</div>
 
 
-Sorular"></h2>
-    <div class="grid">
-      <div class="card"><h3 data-ru="Как это работает?" data-en="How does it work?" data-tr="Nasıl çalışır?"></h3><p data-ru="Вы связываетесь с нами, описываете задачу, после чего мы предлагаем подходящее решение." data-en="You contact us, describe your task, and we offer a suitable solution." data-tr="Bizimle iletişime geçer, ihtiyacınızı anlatırsınız ve size uygun çözümü sunarız."></p></div>
-      <div class="card"><h3 data-ru="Вы работаете с Турцией?" data-en="Do you work with Turkey?" data-tr="Türkiye ile çalışıyor musunuz?"></h3><p data-ru="Да, RealShuma ориентирована на международных клиентов, включая Турцию, Европу и страны СНГ." data-en="Yes, RealShuma focuses on international clients including Turkey, Europe and CIS countries." data-tr="Evet, RealShuma Türkiye, Avrupa ve BDT ülkeleri dahil uluslararası müşterilere odaklanır."></p></div>
-    </div>
+<p>“Долго искала, через кого можно оплатить API DeepSeek. Спасибо вам большое! Быстро, чётко, менеджер Александра провела за руку по всем вопросам. Оплату провели буквально за 10 минут.”</p><a class="review-link" href="https://vk.ru/filinbro" target="_blank">View VK profile</a></div>
+
+    <div class="card"><div class="review-name">Franco Barbi</div><div class="review-date">Oct 2025</div><p>“Получила оплату от иностранного заказчика очень быстро. Не первый раз мне помогает, когда-то давно обращалась с просьбой оплатить иностранную подписку. Очень хороший посредник!”</p><a class="review-link" href="https://vk.ru/leviackerman_01" target="_blank">View VK profile</a></div>
+
+    <div class="card"><div class="review-name">Неизвестный Чувачок</div><div class="review-date">6 Jun</div><p>“Самый лучший посредник без каких-либо сомнений. Комиссия маленькая, скорость быстрая. Обращаюсь на протяжении полутора лет.”</p><a class="review-link" href="https://vk.ru/danilukos" target="_blank">View VK profile</a></div>
+
+    <div class="card"><div class="review-name">Анри Агеева</div><div class="review-date">30 Jun 2024</div><p>“Перешла с другого посредника, который пообещал вывод в течение 2 недель. Здесь всё буквально через пару минут вывели после получения. Очень жаль, что раньше не наткнулась на вас.”</p><a class="review-link" href="https://vk.ru/id767787652" target="_blank">View VK profile</a></div>
+
+    <div class="card"><div class="review-name">Евгений Прохоренко</div><div class="review-date">10 Oct 2025</div><p>“Роман помог принять оплату из-за границы на PayPal, с последующим выводом на карту, чётко и без проблем. Буду дальше сотрудничать!”</p><a class="review-link" href="https://vk.ru/mr.prohorgmail" target="_blank">View VK profile</a></div>
+
+    <div class="card"><div class="review-name">Владимир Полькин</div><div class="review-date">6 May</div><p>“Второй раз вывожу с Cults. Всё хорошо и честно. Можете использовать услуги Романа. Буду обращаться в дальнейшем.”</p><a class="review-link" href="https://vk.ru/mayerok" target="_blank">View VK profile</a></div>
+
+    <div class="card"><div class="review-name">Артем Куприянов</div><div class="review-date">17 Mar</div><p>“Никто не брался принимать оплату по инвойсу, Роман очень выручил. Всё оперативно и прозрачно.”</p><a class="review-link" href="https://vk.ru/splicr" target="_blank">View VK profile</a></div>
+
+    <div class="card"><div class="review-name">Анастасия Гращенко</div><div class="review-date">28 Jun</div><p>“Все прошло отлично, спасибо Роману за сервис. Помог принять оплату из-за границы на PayPal и Wise. Рекомендую!”</p><a class="review-link" href="https://vk.ru/graschaaa" target="_blank">View VK profile</a></div>
+
+    <div class="card"><div class="review-name">Oksana Sunagatova</div><div class="review-date">25 Jun</div><p>“Огромное спасибо. Долго не могла найти способ оплатить в Индонезию, все очень быстро и четко, 10000% рекомендую.”</p><a class="review-link" href="https://vk.ru/sanramires" target="_blank">View VK profile</a></div>
+
+    <div class="card"><div class="review-name">Nvpr Implant</div><div class="review-date">19 Jun</div><p>“Помог пополнить счёт на аккаунте японского сайта. Всё очень оперативно и понятно. Если потребуется снова пополнить счёт, обращусь ещё раз.”</p><a class="review-link" href="https://vk.ru/nvprimplant" target="_blank">View VK profile</a></div>
+
+    <div class="card"><div class="review-name">Даниил Ткачев</div><div class="review-date">4 Jul</div><p>“Большая благодарность Роману! Всегда отвечает по мере возможности и человеческого фактора, всё понравилось, будем работать ещё.”</p><a class="review-link" href="https://vk.ru/kyvvvvat" target="_blank">View VK profile</a></div>
+
+    <div class="card"><div class="review-name">Александр Петров</div><div class="review-date">7 Oct 2025</div><p>“С Романом сотрудничаю второй год. Всем рекомендую, не сомневайтесь, человек слова. Оперативно решает нужные вопросы.”</p><a class="review-link" href="https://vk.ru/id52219
+
+
+8814" target="_blank">View VK profile</a></div>
+
+    <div class="card"><div class="review-name">Sascha Heiland</div><div class="review-date">18 Jun 2024</div><p>“Роман очень надежный и быстрый, я могу его полностью рекомендовать!”</p><a class="review-link" href="https://vk.ru/saschah1977" target="_blank">View VK profile</a></div>
+
+    <div class="card"><div class="review-name">Silverus Kvassus</div><div class="review-date">16 Mar</div><p>“Оперативно сработали ребята, спасибо большое! Отдельное спасибо менеджеру Александре, терпеливо и быстро отвечала на все вопросы. Буду обращаться вновь!”</p><a class="review-link" href="https://vk.ru/kvassus" target="_blank">View VK profile</a></div>
+
+    <div class="card"><div class="review-name">Дмитрий Кринков</div><div class="review-date">21 Jun 2024</div><p>“Выводил с 3D стока деньги через Романа, всё прошло отлично — быстро, понятно и по делу. Однозначно рекомендую.”</p><a class="review-link" href="https://vk.ru/dmitry_krinkov" target="_blank">View VK profile</a></div>
+
   </div>
 </section>
 
-<section>
-  <h2 data-ru="Контакт" data-en="Contact" data-tr="İletişim"></h2>
+<section class="faq">
+  <h2 data-en="FAQ" data-tr="Sıkça Sorulan Sorular" data-ru="Частые вопросы">FAQ</h2>
+
   <div class="card">
-    <p>Telegram: <b>@realshuma</b></p>
-    <p>Email: <b>Realshuma@mail.ru</b></p>
-    <p>Website: <b>realshuma.com</b></p>
+    <h3 data-en="How does it work?" data-tr="Nasıl çalışır?" data-ru="Как это работает?">How does it work?</h3>
+    <p data-en="Contact us, describe your payment task, and we will offer the best available solution."
+       data-tr="Bizimle iletişime geçin, ödeme görevinizi açıklayın, size en uygun çözümü sunalım."
+       data-ru="Свяжитесь с нами, опишите задачу по оплате, и мы предложим лучшее доступное решение.">Contact us, describe your payment task, and we will offer the best available solution.</p>
+  </div>
+
+  <div class="card">
+    <h3 data-en="Do you work internationally?" data-tr="Uluslararası çalışıyor musunuz?" data-ru="Вы работаете за границей?">Do you work internationally?</h3>
+    <p data-en="Yes. RealShuma is focused on international clients, including Turkey, Europe, CIS and other regions."
+       data-tr="Evet. RealShuma Türkiye, Avrupa, BDT ve diğer bölgelerdeki uluslararası müşterilere odaklanır."
+       data-ru="Да. RealShuma ориентирована на международных клиентов, включая Турцию, Европу, СНГ и другие регионы.">Yes. RealShuma is focused on international clients, including Turkey, Europe, CIS and other regions.</p>
+  </div>
+
+  <div class="card">
+    <h3 data-en="Which platforms do you support?" data-tr="Hangi platformları destekliyorsunuz?" data-ru="С какими платформами работаете?">Which platforms do you support?</h3>
+    <p data-en="PayPal, Wise, freelance platforms, digital marketplaces, crypto payments, invoices and online services."
+       data-tr="PayPal, Wise, freelance platformları, dijital pazar yerleri, kripto ödemeleri, faturalar ve online servisler."
+       data-ru="PayPal, Wise, фриланс-платформы, цифровые маркетплейсы, криптоплатежи, инвойсы и онлайн-сервисы.">PayPal, Wise, freelance platforms, digital marketplaces, crypto payments, invoices and online services.</p>
+  </div>
+</section>
+
+<section>
+  <h2 data-en="Contact" data-tr="İletişim" data-ru="Контакты">Contact</h2>
+  <div class="card">
+    <p><b>Telegram:</b> <a href="https://t.me/realshuma" target="_blank">@realshuma</a></p>
+    <p><b>Email:</b> Realshuma@mail.ru</p>
+    <p><b>Website:</b> realshuma.com</p>
   </div>
 </section>
 
 <footer>
-  © 2026 RealShuma. Global Payment Solutions.
+  © 2026 RealShuma. International Payment Solutions.
 </footer>
 
 <script>
-  function setLang(lang){
-    document.querySelectorAll('[data-'+lang+']').forEach(el=>{
-      el.textContent = el.getAttribute('data-'+lang);
-    });
-    localStorage.setItem('lang', lang);
-    document.documentElement.lang = lang;
-  }
-  setLang(localStorage.getItem('lang') || 'en');
+function setLang(lang){
+  document.querySelectorAll('[data-en]').forEach(el=>{
+    el.textContent = el.dataset[lang];
+  });
+  document.documentElement.lang = lang;
+}
 </script>
 
 </body>
 </html>
-
-
