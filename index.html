@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RealShuma — International Payment Solutions</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f6f8fb;
+      color: #101827;
+    }
+
+    header {
+      background: #07142f;
+      color: white;
+      padding: 24px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 34px;
+    }
+
+    header p {
+      color: #cbd5e1;
+      font-size: 18px;
+    }
+
+    .lang {
+      margin-top: 16px;
+    }
+
+    .lang button {
+      margin: 4px;
+      padding: 10px 16px;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      background: #14b8a6;
+      color: white;
+      font-weight: bold;
+    }
+
+    section {
+      max-width: 1050px;
+      margin: auto;
+      padding: 55px 22px;
+    }
+
+    .hero {
+      text-align: center;
+      background: linear-gradient(135deg, #07142f, #0f766e);
+      color: white;
+      padding: 80px 22px;
+    }
+
+    .hero h2 {
+      font-size: 42px;
+      margin-bottom: 16px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      color: #e2e8f0;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 22px;
+      padding: 14px 24px;
+      background: #14b8a6;
+      color: white;
+      text-decoration: none;
+      border-radius: 12px;
+      font-weight: bold;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 24px;
+      border-radius: 18px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #0f766e;
+    }
+
+    h2 {
+      font-size: 32px;
+      margin-bottom: 24px;
+    }
+
+    .reviews {
+      background: #eef6f5;
+    }
+
+    footer {
+      background: #07142f;
+      color: white;
+      text-align: center;
+      padding: 35px 20px;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    @media (max-width: 600px) {
+      .hero h2 {
+        font-size: 32px;
+      }
+
+      header h1 {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>RealShuma</h1>
+  <p>International Payment Solutions</p>
+
+  <div class="lang">
+    <button onclick="showLang('en')">🇬🇧 English</button>
+    <button onclick="showLang('tr')">🇹🇷 Türkçe</button>
+    <button onclick="showLang('ru')">🇷🇺 Русский</button>
+  </div>
+</header>
+
+<div id="en">
+  <div class="hero">
+    <h2>International Payment Solutions</h2>
+    <p>Helping freelancers, businesses and individuals receive and send payments worldwide.</p>
+    <a class="btn" href="https://t.me/realshuma">Contact via Telegram</a>
+  </div>
+
+  <section>
+    <h2>Why clients trust RealShuma</h2>
+    <div class="grid">
+      <div class="card"><h3>Since 2022</h3><p>Experience with international payments and digital platforms.</p></div>
+      <div class="card"><h3>500+ Reviews</h3><p>Verified client feedback and long-term cooperation.</p></div>
+      <div class="card"><h3>Worldwide Support</h3><p>Support for clients from different countries and regions.</p></div>
+      <div class="card"><h3>Fast Communication</h3><p>Quick replies via Telegram, WhatsApp and email.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Services</h2>
+    <div class="grid">
+      <div class="card"><h3>PayPal Payments</h3><p>Help with receiving and withdrawing PayPal payments.</p></div>
+      <div class="card"><h3>Freelance Payouts</h3><p>Payment solutions for freelancers and digital creators.</p></div>
+      <div class="card"><h3>Crypto & Fiat</h3><p>Crypto, stablecoins and fiat payment assistance.</p></div>
+      <div class="card"><h3>International Transfers</h3><p>Support with international payment routes.</p></div>
+    </div>
+  </section>
+
+  <section class="reviews">
+    <h2>Reviews</h2>
+    <div class="card">
+      <h3>500+ verified reviews since 2022</h3>
+      <p>Real reviews, screenshots and client stories will be added here.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>FAQ</h2>
+    <div class="card">
+      <h3>How does it work?</h3>
+      <p>Contact us, describe your payment task, and we will suggest the best available solution.</p>
+      <h3>Do you work internationally?</h3>
+      <p>Yes, RealShuma is focused on international clients, including Turkey, Europe, CIS and other regions.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <div class="card">
+      <p>Telegram: @realshuma</p>
+      <p>Email: Realshuma@mail.ru</p>
+      <p>Website: realshuma.com</p>
+    </div>
+  </section>
+</div>
+
+<div id="tr" class="hidden">
+  <div class="hero">
+    <h2>Uluslararası Ödeme Çözümleri</h2>
+    <p>Freelancerlara, işletmelere ve bireylere dünya çapında ödeme alma ve gönderme konusunda yardımcı oluyoruz.</p>
+    <a class="btn" href="https://t.me/realshuma">Telegram ile iletişim</a>
+  </div>
+
+  <section>
+    <h2>Neden RealShuma?</h2>
+    <div class="grid">
+      <div class="card"><h3>2022’den beri</h3><p>Uluslararası ödemeler ve dijital platformlarla deneyim.</p></div>
+      <div class="card"><h3>500+ yorum</h3><p>Doğrulanmış müşteri yorumları ve uzun süreli işbirliği.</p></div>
+      <div class="card"><h3>Dünya çapında destek</h3><p>Farklı ülkelerden müşterilere destek.</p></div>
+      <div class="card"><h3>Hızlı iletişim</h3><p>Telegram, WhatsApp ve e-posta üzerinden hızlı yanıt.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Hizmetler</h2>
+    <div class="grid">
+      <div class="card"><h3>PayPal Ödemeleri</h3><p>PayPal ödemeleri alma ve çekme konusunda yardım.</p></div>
+      <div class="card"><h3>Freelance Ödemeleri</h3><p>Freelancerlar ve dijital içerik üreticileri için ödeme çözümleri.</p></div>
+      <div class="card"><h3>Kripto & Fiat</h3><p>Kripto, stablecoin ve fiat ödeme desteği.</p></div>
+      <div class="card"><h3>Uluslararası Transferler</h3><p>Uluslararası ödeme yolları konusunda destek.</p></div>
+    </div>
+  </section>
+</div>
+
+<div id="ru" class="hidden">
+  <div class="hero">
+    <h2>Международные платёжные решения</h2>
+    <p>Помогаем фрилансерам, бизнесу и частным клиентам получать и отправлять платежи по всему миру.</p>
+    <a class="btn" href="https://t.me/realshuma">Написать в Telegram</a>
+  </div>
+
+  <section>
+    <h2>Почему доверяют RealShuma</h2>
+    <div class="grid">
+      <div class="card"><h3>С 2022 года</h3><p>Опыт работы с международными платежами и цифровыми платформами.</p></div>
+      <div class="card"><h3>500+ отзывов</h3><p>Проверенные отзывы клиентов и долгосрочная работа.</p></div>
+      <div class="card"><h3>Международная работа</h3><p>Клиенты из разных стран и регионов.</p></div>
+      <div class="card"><h3>Быстрая связь</h3><p>Ответы через Telegram, WhatsApp и email.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Услуги</h2>
+    <div class="grid">
+      <div class="card"><h3>PayPal платежи</h3><p>Помощь с получением и выводом PayPal платежей.</p></div>
+      <div class="card"><h3>Выплаты фрилансерам</h3><p>Решения для фрилансеров и цифровых авторов.</p></div>
+      <div class="card"><h3>Крипта и фиат</h3><p>Помощь с криптовалютой, стейблкоинами и фиатом.</p></div>
+      <div class="card"><h3>Международные переводы</h3><p>Поддержка с международными платёжными маршрутами.</p></div>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <p>© 2026 RealShuma. International Payment Solutions.</p>
+</footer>
+
+<script>
+  function showLang(lang) {
+    document.getElementById('en').classList.add('hidden');
+    document.getElementById('tr').classList.add('hidden');
+    document.getElementById('ru').classList.add('hidden');
+    document.getElementById(lang).classList.remove('hidden');
+  }
+</script>
+
+</body>
+</html>
